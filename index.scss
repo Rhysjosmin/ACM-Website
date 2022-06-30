@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    //font-family: 'Dosis', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior:auto
+}
+
+.hero{
+    background: linear-gradient(to bottom,rgb(32, 32, 32),black);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    justify-content: space-between;
+    gap: 1vw;
+    
+    
+    .headText{
+        font-size: 10vw;
+        width: 2.5vw;
+        color: aliceblue;
+    }
+}
+
+.upcoming{
+    width: 60vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(244, 255, 83);
+    border-radius: 2vw;
+    font-size: 3vw;
+    padding: 1vw;
+    flex-direction: column;
+   a{
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 1vw;
+    background: rgb(0, 0, 0);
+    border-radius: 1vw;
+    border: none;
+    text-decoration: none;
+    &:hover{
+        background-color: rgb(32, 32, 32);
+    }
+   }
+    
+}
+
+.intro{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 4vw;
+    
+}
+nav{
+    
+    background: rgb(20, 20, 20);
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+    padding: 1vh;
+    display: flex;
+    justify-content: flex-end;
+
+    align-items: center;
+    gap: 1vw;
+    a{
+        text-decoration: none;
+        color: aliceblue;
+        height: 6vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-right: 1vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        font-size: 1.4em;
+        background: rgb(3, 3, 3);
+        border-radius: 2vh;
+    }
+}
