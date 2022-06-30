@@ -91,10 +91,19 @@ nav{
         text-align: center;
         align-items: center;
         margin-right: 1vw;
-        padding-left: 1vw;
-        padding-right: 1vw;
+        padding-inline: 1vw;
+        
         font-size: 1.4em;
         background: rgb(3, 3, 3);
         border-radius: 2vh;
+        &:hover{
+            background-color: rgb(26, 26, 26);
+        }
+    }
+}
+
+.news-container{
+    .news-card{
+
     }
 }
