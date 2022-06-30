@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+$theme1:rgb(244, 255, 83);
+$count: 15;
 *{
     //font-family: 'Dosis', sans-serif;
     font-family: 'Exo 2', sans-serif;
     padding: 0%;
     margin: 0%;
-    scroll-behavior:auto
+    scroll-behavior:smooth;
 }
 
 .hero{
@@ -35,7 +36,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgb(244, 255, 83);
+    background:$theme1 ;
     border-radius: 2vw;
     font-size: 3vw;
     padding: 1vw;
@@ -96,14 +97,55 @@ nav{
         font-size: 1.4em;
         background: rgb(3, 3, 3);
         border-radius: 2vh;
+        transition: background-color .2s;
         &:hover{
-            background-color: rgb(26, 26, 26);
+            background-color: rgb(27, 27, 27);
         }
     }
 }
 
 .news-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+   padding-block:10vw;
     .news-card{
 
+        padding-top: 2vh;
+        padding-bottom: 8vh;
+        width: 40vh;
+        border-radius: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        transition: transform .5s;
+        &:hover{
+            transform: translate(-.5vh ,-1vh);
+            
+        }
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background: #000;
+            margin-top: 2vw;
+            padding: 1vw;
+            border-radius: 1vw;
+            &:hover{
+                background-color: rgb(54, 54, 54);
+            }
+        }
+    }
+}
+
+@for $i from 1 through $count {
+
+    .news-card {
+      &:nth-child(#{$i}){
+        background-color: hsl(random(360),random(100),80);
+      }
     }
 }

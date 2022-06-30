@@ -4,7 +4,7 @@
   font-family: "Exo 2", sans-serif;
   padding: 0%;
   margin: 0%;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 .hero {
@@ -87,7 +87,103 @@ nav a {
   font-size: 1.4em;
   background: rgb(3, 3, 3);
   border-radius: 2vh;
+  transition: background-color 0.2s;
 }
 nav a:hover {
-  background-color: rgb(26, 26, 26);
+  background-color: rgb(27, 27, 27);
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  padding-block: 10vw;
+}
+.news-container .news-card {
+  padding-top: 2vh;
+  padding-bottom: 8vh;
+  width: 40vh;
+  border-radius: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.5s;
+}
+.news-container .news-card:hover {
+  transform: translate(-0.5vh, -1vh);
+}
+.news-container .news-card a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background: #000;
+  margin-top: 2vw;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+.news-container .news-card a:hover {
+  background-color: rgb(54, 54, 54);
+}
+
+.news-card:nth-child(1) {
+  background-color: hsl(295deg, 39%, 80%);
+}
+
+.news-card:nth-child(2) {
+  background-color: hsl(253deg, 1%, 80%);
+}
+
+.news-card:nth-child(3) {
+  background-color: hsl(328deg, 31%, 80%);
+}
+
+.news-card:nth-child(4) {
+  background-color: hsl(145deg, 68%, 80%);
+}
+
+.news-card:nth-child(5) {
+  background-color: hsl(67deg, 98%, 80%);
+}
+
+.news-card:nth-child(6) {
+  background-color: hsl(327deg, 55%, 80%);
+}
+
+.news-card:nth-child(7) {
+  background-color: hsl(155deg, 71%, 80%);
+}
+
+.news-card:nth-child(8) {
+  background-color: hsl(207deg, 50%, 80%);
+}
+
+.news-card:nth-child(9) {
+  background-color: hsl(38deg, 86%, 80%);
+}
+
+.news-card:nth-child(10) {
+  background-color: hsl(353deg, 69%, 80%);
+}
+
+.news-card:nth-child(11) {
+  background-color: hsl(130deg, 40%, 80%);
+}
+
+.news-card:nth-child(12) {
+  background-color: hsl(220deg, 60%, 80%);
+}
+
+.news-card:nth-child(13) {
+  background-color: hsl(42deg, 43%, 80%);
+}
+
+.news-card:nth-child(14) {
+  background-color: hsl(177deg, 100%, 80%);
+}
+
+.news-card:nth-child(15) {
+  background-color: hsl(70deg, 16%, 80%);
 }/*# sourceMappingURL=index.css.map */
