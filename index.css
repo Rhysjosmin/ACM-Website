@@ -129,61 +129,102 @@ nav a:hover {
 }
 
 .news-card:nth-child(1) {
-  background-color: hsl(130deg, 84%, 80%);
+  background-color: hsl(126deg, 4%, 80%);
 }
 
 .news-card:nth-child(2) {
-  background-color: hsl(113deg, 100%, 80%);
+  background-color: hsl(100deg, 3%, 80%);
 }
 
 .news-card:nth-child(3) {
-  background-color: hsl(128deg, 76%, 80%);
+  background-color: hsl(356deg, 41%, 80%);
 }
 
 .news-card:nth-child(4) {
-  background-color: hsl(139deg, 97%, 80%);
+  background-color: hsl(75deg, 3%, 80%);
 }
 
 .news-card:nth-child(5) {
-  background-color: hsl(288deg, 98%, 80%);
+  background-color: hsl(351deg, 36%, 80%);
 }
 
 .news-card:nth-child(6) {
-  background-color: hsl(219deg, 59%, 80%);
+  background-color: hsl(159deg, 33%, 80%);
 }
 
 .news-card:nth-child(7) {
-  background-color: hsl(300deg, 44%, 80%);
+  background-color: hsl(262deg, 87%, 80%);
 }
 
 .news-card:nth-child(8) {
-  background-color: hsl(319deg, 94%, 80%);
+  background-color: hsl(204deg, 38%, 80%);
 }
 
 .news-card:nth-child(9) {
-  background-color: hsl(325deg, 72%, 80%);
+  background-color: hsl(121deg, 100%, 80%);
 }
 
 .news-card:nth-child(10) {
-  background-color: hsl(161deg, 62%, 80%);
+  background-color: hsl(256deg, 6%, 80%);
 }
 
 .news-card:nth-child(11) {
-  background-color: hsl(244deg, 27%, 80%);
+  background-color: hsl(100deg, 37%, 80%);
 }
 
 .news-card:nth-child(12) {
-  background-color: hsl(13deg, 39%, 80%);
+  background-color: hsl(116deg, 92%, 80%);
 }
 
 .news-card:nth-child(13) {
-  background-color: hsl(137deg, 68%, 80%);
+  background-color: hsl(307deg, 38%, 80%);
 }
 
 .news-card:nth-child(14) {
-  background-color: hsl(263deg, 23%, 80%);
+  background-color: hsl(70deg, 1%, 80%);
 }
 
 .news-card:nth-child(15) {
-  background-color: hsl(217deg, 5%, 80%);
+  background-color: hsl(179deg, 42%, 80%);
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  min-height: 100vh;
+}
+.gallery .Slides img {
+  border-radius: 5vh;
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+.team {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+.team .member {
+  background: rgb(205, 97, 255);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5vh;
+  padding: 2vw;
+}
+.team .member img {
+  height: 30vw;
+  width: auto;
+  border-radius: inherit;
 }/*# sourceMappingURL=index.css.map */

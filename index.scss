@@ -145,7 +145,52 @@ nav{
 
     .news-card {
       &:nth-child(#{$i}){
-        background-color: hsl(random(360),random(100),80);
+        background-color: hsl(random(360),random(100)*1%,80%);
       }
+    }
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    min-height: 100vh;
+    .Slides{
+        
+        
+        
+        img{
+            
+            border-radius: 5vh;
+            max-width: 80vw;
+            max-height: 80vh;
+        }
+    }
+   
+}
+.team{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    .member{
+        background: rgb(205, 97, 255);
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 5vh;
+        padding: 2vw;
+        
+        
+        img{
+            height: 30vw;
+            width: auto;
+            border-radius: inherit;
+        }
     }
 }
