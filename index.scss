@@ -199,13 +199,14 @@ nav{
     height: fit-content;
     video{
         max-width: 100vw;
-        transition: all 1s;
+        
     }
 }
 .changeVid{
    position:absolute; 
    display: flex;
    flex-direction: column;
-   top: 20vh;
+   bottom: 0%;
+   right: 0;
    
 }

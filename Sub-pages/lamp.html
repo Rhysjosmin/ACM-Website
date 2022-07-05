@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/ACM-Website/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACM DBCE</title>
+</head>
+<body>
+    <section class="video">
+        <video id="vid"  autoplay muted>
+            <source id="src" src="/ACM-Website/media/Lamp/Start.mp4" type="video/mp4">
+         </video><br/><br/>
+         <div class="changeVid">
+         <button id="change1">Ms Maria Choudhary</button>
+         <button id="change2">Rev Fr. Kinley D'Cruz</button>
+         <button id="change3">Dr Neena Panandikar</button>
+         <button id="change4">Dr Gaurang Patkar</button>
+         <button id="change5">Chairman And Student Member</button>   
+         </div>
+         
+    
+    
+        <script>
+            const v = document.getElementById("vid");
+            const s = document.getElementById("src");
+            
+           
+            function changeVideo1() { 
+               s.src = '/ACM-Website/media/Lamp/1.mp4';
+               v.load();
+               v.play();
+               v.loop = true;
+            }
+            function changeVideo2() { 
+               s.src = '/ACM-Website/media/Lamp/2.mp4';
+               v.load();
+               v.play();
+               v.loop = true;
+            }
+            function changeVideo3() { 
+               s.src = '/ACM-Website/media/Lamp/3.mp4';
+               v.load();
+               v.play();
+               v.loop = true;
+            }
+            function changeVideo4() { 
+               s.src = '/ACM-Website/media/Lamp/4.mp4';
+               v.load();
+               v.play();
+               v.loop = true;
+            }
+            function changeVideo5() { 
+               s.src = '/ACM-Website/media/Lamp/5.mp4';
+               v.load();
+               v.play();
+               v.loop = true;
+            }
+           
+            document.getElementById("change1").onclick=changeVideo1; 
+            document.getElementById("change2").onclick=changeVideo2; 
+            document.getElementById("change3").onclick=changeVideo3; 
+            document.getElementById("change4").onclick=changeVideo4; 
+            document.getElementById("change5").onclick=changeVideo5; 
+           </script>  
+
+
+</body>
+</html>
