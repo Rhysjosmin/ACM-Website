@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACM DBCE</title>
 </head>
-<body>
+<body style="background: black;">
     <section class="video">
-        <video id="vid"  autoplay muted>
+        <video id="vid"  autoplay muted preload="auto">
             <source id="src" src="/ACM-Website/media/Lamp/Start.mp4" type="video/mp4">
          </video><br/><br/>
          <div class="changeVid">
          <button id="change1">Ms Maria Choudhary</button>
          <button id="change2">Rev Fr. Kinley D'Cruz</button>
          <button id="change3">Dr Neena Panandikar</button>
-         <button id="change4">Dr Gaurang Patkar</button>
-         <button id="change5">Chairman And Student Member</button>   
+         <button id="change4">Mr Suhas Mallaya</button>
+         <button id="change5">Dr Gaurang Patkar,And Student Members</button>   
          </div>
          
     
@@ -32,30 +32,35 @@
                v.load();
                v.play();
                v.loop = true;
+               v.preload="auto";
             }
             function changeVideo2() { 
                s.src = '/ACM-Website/media/Lamp/2.mp4';
                v.load();
                v.play();
                v.loop = true;
+               v.preload="auto";
             }
             function changeVideo3() { 
                s.src = '/ACM-Website/media/Lamp/3.mp4';
                v.load();
                v.play();
                v.loop = true;
+               v.preload="auto";
             }
             function changeVideo4() { 
                s.src = '/ACM-Website/media/Lamp/4.mp4';
                v.load();
                v.play();
                v.loop = true;
+               v.preload="auto";
             }
             function changeVideo5() { 
                s.src = '/ACM-Website/media/Lamp/5.mp4';
                v.load();
                v.play();
                v.loop = true;
+               v.preload="auto";
             }
            
             document.getElementById("change1").onclick=changeVideo1; 
