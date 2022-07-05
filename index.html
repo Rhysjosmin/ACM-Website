@@ -8,14 +8,71 @@
     <title>ACM DBCE</title>
 </head>
 <body>
-    <nav>
+    <!--<nav>
         <a href="#home">Home</a>
         <a href="#About" >About</a>
         <a href="#news" >News</a>
         <a href="#team">Team</a>
         <a href="#gallery">Gallery</a>
         
-    </nav>
+    </nav> -->
+    <section class="video">
+        <video id="vid"  autoplay muted>
+            <source id="src" src="/ACM-Website/media/Lamp/Start.mp4" type="video/mp4">
+         </video><br/><br/>
+         <div class="changeVid">
+         <button id="change1">Candle1</button>
+         <button id="change2">candle2</button>
+         <button id="change3">candle3</button>
+         <button id="change4">candle4</button>
+         <button id="change5">candle5</button>   
+         </div>
+         
+
+
+        <script>
+            const v = document.getElementById("vid");
+            const s = document.getElementById("src");
+            
+           
+            function changeVideo1() { 
+               s.src = '/ACM-Website/media/Lamp/1.mp4';
+               v.load();
+               v.play();
+               v.loop = true;
+            }
+            function changeVideo2() { 
+               s.src = '/ACM-Website/media/Lamp/2.mp4';
+               v.load();
+               v.play();
+               v.loop = true;
+            }
+            function changeVideo3() { 
+               s.src = '/ACM-Website/media/Lamp/3.mp4';
+               v.load();
+               v.play();
+               v.loop = true;
+            }
+            function changeVideo4() { 
+               s.src = '/ACM-Website/media/Lamp/4.mp4';
+               v.load();
+               v.play();
+               v.loop = true;
+            }
+            function changeVideo5() { 
+               s.src = '/ACM-Website/media/Lamp/5.mp4';
+               v.load();
+               v.play();
+               v.loop = true;
+            }
+           
+            document.getElementById("change1").onclick=changeVideo1; 
+            document.getElementById("change2").onclick=changeVideo2; 
+            document.getElementById("change3").onclick=changeVideo3; 
+            document.getElementById("change4").onclick=changeVideo4; 
+            document.getElementById("change5").onclick=changeVideo5; 
+           </script>
+    </section>
     <section class="hero" id="home">
         <h1 class="headText">ACM DBCE</h1>
         <section class="todo">

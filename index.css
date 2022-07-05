@@ -129,63 +129,63 @@ nav a:hover {
 }
 
 .news-card:nth-child(1) {
-  background-color: hsl(126deg, 4%, 80%);
+  background-color: hsl(337deg, 58%, 80%);
 }
 
 .news-card:nth-child(2) {
-  background-color: hsl(100deg, 3%, 80%);
+  background-color: hsl(45deg, 39%, 80%);
 }
 
 .news-card:nth-child(3) {
-  background-color: hsl(356deg, 41%, 80%);
+  background-color: hsl(218deg, 14%, 80%);
 }
 
 .news-card:nth-child(4) {
-  background-color: hsl(75deg, 3%, 80%);
+  background-color: hsl(137deg, 94%, 80%);
 }
 
 .news-card:nth-child(5) {
-  background-color: hsl(351deg, 36%, 80%);
+  background-color: hsl(201deg, 36%, 80%);
 }
 
 .news-card:nth-child(6) {
-  background-color: hsl(159deg, 33%, 80%);
+  background-color: hsl(258deg, 5%, 80%);
 }
 
 .news-card:nth-child(7) {
-  background-color: hsl(262deg, 87%, 80%);
+  background-color: hsl(283deg, 65%, 80%);
 }
 
 .news-card:nth-child(8) {
-  background-color: hsl(204deg, 38%, 80%);
+  background-color: hsl(255deg, 49%, 80%);
 }
 
 .news-card:nth-child(9) {
-  background-color: hsl(121deg, 100%, 80%);
+  background-color: hsl(221deg, 93%, 80%);
 }
 
 .news-card:nth-child(10) {
-  background-color: hsl(256deg, 6%, 80%);
+  background-color: hsl(307deg, 16%, 80%);
 }
 
 .news-card:nth-child(11) {
-  background-color: hsl(100deg, 37%, 80%);
+  background-color: hsl(260deg, 92%, 80%);
 }
 
 .news-card:nth-child(12) {
-  background-color: hsl(116deg, 92%, 80%);
+  background-color: hsl(152deg, 20%, 80%);
 }
 
 .news-card:nth-child(13) {
-  background-color: hsl(307deg, 38%, 80%);
+  background-color: hsl(350deg, 79%, 80%);
 }
 
 .news-card:nth-child(14) {
-  background-color: hsl(70deg, 1%, 80%);
+  background-color: hsl(5deg, 19%, 80%);
 }
 
 .news-card:nth-child(15) {
-  background-color: hsl(179deg, 42%, 80%);
+  background-color: hsl(244deg, 5%, 80%);
 }
 
 .gallery {
@@ -227,4 +227,22 @@ nav a:hover {
   height: 30vw;
   width: auto;
   border-radius: inherit;
+}
+
+.video {
+  overflow: hidden;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.video video {
+  max-width: 100vw;
+  transition: all 1s;
+}
+
+.changeVid {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 20vh;
 }/*# sourceMappingURL=index.css.map */
