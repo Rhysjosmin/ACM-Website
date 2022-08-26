@@ -59,22 +59,35 @@ body{
    right: 1%;
    gap: .2em;
    
+   background:linear-gradient(to right top,rgb(145, 196, 255) ,rgb(104, 247, 239));
+   padding: 4px;
+   border-radius: 8px;
    
 }
 button{
+    display: none;
     font-size: 1.2em;
-    background: rgb(255, 255, 255);
+    background: rgb(216, 216, 216);
     border-radius: 8px;
-    display: flex;
+    //display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding: 1vw;
+    padding: .2em;
     border: none;
-    height: 2em;
+    width: 12em;
+    
     transition: background-color .5s;
     &:hover{
-        background: #9bdaff;
+        background: #ffffff;
     }
 
+}
+
+.disappear{
+    transition: all .3s;
+    opacity: 20%;
+    &:hover{
+        opacity: 100%;
+    } 
 }
