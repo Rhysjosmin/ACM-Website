@@ -129,63 +129,63 @@ nav a:hover {
 }
 
 .news-card:nth-child(1) {
-  background-color: hsl(283deg, 72%, 80%);
+  background-color: hsl(270deg, 80%, 80%);
 }
 
 .news-card:nth-child(2) {
-  background-color: hsl(352deg, 96%, 80%);
+  background-color: hsl(206deg, 58%, 80%);
 }
 
 .news-card:nth-child(3) {
-  background-color: hsl(206deg, 32%, 80%);
+  background-color: hsl(186deg, 80%, 80%);
 }
 
 .news-card:nth-child(4) {
-  background-color: hsl(230deg, 92%, 80%);
+  background-color: hsl(64deg, 2%, 80%);
 }
 
 .news-card:nth-child(5) {
-  background-color: hsl(166deg, 28%, 80%);
+  background-color: hsl(65deg, 54%, 80%);
 }
 
 .news-card:nth-child(6) {
-  background-color: hsl(239deg, 68%, 80%);
+  background-color: hsl(245deg, 98%, 80%);
 }
 
 .news-card:nth-child(7) {
-  background-color: hsl(250deg, 25%, 80%);
+  background-color: hsl(105deg, 10%, 80%);
 }
 
 .news-card:nth-child(8) {
-  background-color: hsl(7deg, 74%, 80%);
+  background-color: hsl(162deg, 80%, 80%);
 }
 
 .news-card:nth-child(9) {
-  background-color: hsl(323deg, 26%, 80%);
+  background-color: hsl(235deg, 8%, 80%);
 }
 
 .news-card:nth-child(10) {
-  background-color: hsl(93deg, 14%, 80%);
+  background-color: hsl(33deg, 58%, 80%);
 }
 
 .news-card:nth-child(11) {
-  background-color: hsl(165deg, 55%, 80%);
+  background-color: hsl(138deg, 27%, 80%);
 }
 
 .news-card:nth-child(12) {
-  background-color: hsl(299deg, 62%, 80%);
+  background-color: hsl(81deg, 64%, 80%);
 }
 
 .news-card:nth-child(13) {
-  background-color: hsl(149deg, 50%, 80%);
+  background-color: hsl(53deg, 21%, 80%);
 }
 
 .news-card:nth-child(14) {
-  background-color: hsl(221deg, 41%, 80%);
+  background-color: hsl(101deg, 3%, 80%);
 }
 
 .news-card:nth-child(15) {
-  background-color: hsl(307deg, 36%, 80%);
+  background-color: hsl(287deg, 2%, 80%);
 }
 
 .gallery {
@@ -230,7 +230,6 @@ nav a:hover {
 }
 
 .video {
-  overflow: hidden;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -245,4 +244,4 @@ nav a:hover {
   flex-direction: column;
   bottom: 0%;
   right: 0;
-}/*# sourceMappingURL=index.css.map */
+}

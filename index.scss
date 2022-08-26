@@ -195,7 +195,7 @@ nav{
     }
 }
 .video{
-    overflow: hidden;
+    
     height: fit-content;
     video{
         max-width: 100vw;
@@ -203,6 +203,7 @@ nav{
     }
 }
 .changeVid{
+    
    position:absolute; 
    display: flex;
    flex-direction: column;
