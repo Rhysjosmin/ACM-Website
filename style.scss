@@ -102,12 +102,13 @@ img{
     font-size: 2vw;
 }
 .rotate{
-    animation: rot 1s ease 0s;
+    animation: rot 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
 }
 @keyframes rot {
     0%{
         transform: rotate(0deg);
     }
+    
     100%{
         transform: rotate(360deg);
     }

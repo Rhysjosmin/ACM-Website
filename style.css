@@ -95,8 +95,8 @@ body {
 }
 
 .rotate {
-  -webkit-animation: rot 1s ease 0s;
-          animation: rot 1s ease 0s;
+  -webkit-animation: rot 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+          animation: rot 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
 }
 
 @-webkit-keyframes rot {
