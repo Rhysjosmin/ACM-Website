@@ -1,5 +1,5 @@
 const  DKMDBtn=document.getElementById('Darkmode_button');
-function darkmode(){
+async function darkmode(){
     DKMDBtn.classList.remove('rotate');
     void DKMDBtn.offsetWidth;
     DKMDBtn.classList.add('rotate');
