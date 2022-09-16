@@ -24,6 +24,9 @@ body{
     font-family: 'Titillium Web', sans-serif;
 }
 #nav{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 position: fixed;
 z-index: 100;
    background: var(--base);
@@ -88,12 +91,24 @@ img{
 .card{
     height: 20vw;
     width: 90vw;
-    background: var(--secondary);
+    //background: var(--secondary);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     border-radius: var(--radius);
+    border: #111111 solid .3vh;
     font-size: 2vw;
+}
+.rotate{
+    animation: rot 1s ease 0s;
+}
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
