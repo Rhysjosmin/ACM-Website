@@ -4,13 +4,32 @@
   margin: 0%;
   padding: 0%;
 }
+*::-webkit-scrollbar {
+  display: none;
+}
 
 :root {
   --radius:2vw;
-  --base:white;
+  --base:rgb(255, 255, 255);
   --secondary:gray;
   --tertiary:#111111;
   --accent:rgb(1, 81, 255);
+}
+
+.dark {
+  --radius:2vw;
+  --base:#000000;
+  --secondary:rgb(70, 70, 70);
+  --tertiary:#ffffff;
+  --accent:rgb(255, 1, 98);
+}
+
+.other {
+  --radius:2vw;
+  --base:hsl(140, 100%, .8%);
+  --secondary:rgb(70, 70, 70);
+  --tertiary:#ffffff;
+  --accent:rgb(69, 255, 1);
 }
 
 .material-symbols-outlined {
@@ -18,6 +37,10 @@
 }
 
 body {
+  scroll-behavior: smooth;
+  transition: color 0.5s, background-color 0.5s;
+  color: var(--tertiary);
+  background: var(--base);
   font-family: "Titillium Web", sans-serif;
 }
 
@@ -41,6 +64,10 @@ body {
   font-size: 1.3em;
   color: var(--tertiary);
   padding: 0.5vw;
+  transition: color 0.7s;
+}
+#nav a:hover {
+  color: var(--accent);
 }
 
 #Hero {
@@ -68,7 +95,7 @@ body {
   position: absolute;
   z-index: 1;
   width: 95%;
-  height: 95vh;
+  height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: var(--radius);
@@ -90,7 +117,7 @@ body {
   justify-content: center;
   text-align: center;
   border-radius: var(--radius);
-  border: #111111 solid 0.3vh;
+  border: var(--secondary) solid 0.3vh;
   font-size: 2vw;
 }
 
@@ -115,4 +142,55 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+#announcments {
+  width: 100vw;
+  display: flex;
+  gap: 5vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#announcement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: var(--radius);
+  border: var(--secondary) solid 0.3vh;
+  width: 80vw;
+  min-height: 45vw;
+  padding: 2vw;
+}
+#announcement #Title {
+  font-size: 7vw;
+}
+#announcement #Timing {
+  font-size: 3vw;
+  color: var(--accent);
+}
+#announcement #Description {
+  font-size: 3vw;
+}
+#announcement #Buttons {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#announcement #Buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 2.4em;
+  border-radius: var(--radius);
+  width: 48%;
+  border: var(--secondary) solid 0.3vh;
+  text-decoration: none;
+  color: var(--tertiary);
+  transition: background-color 0.4s;
+}
+#announcement #Buttons a:hover {
+  background: var(--accent);
 }
