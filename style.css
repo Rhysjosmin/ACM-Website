@@ -214,7 +214,6 @@ body {
 }
 #announcement #Timing {
   position: relative;
-  top: -2vh;
   font-size: 3vw;
   font-weight: 400;
   color: var(--accent);
