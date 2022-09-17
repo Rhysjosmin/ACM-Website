@@ -15,6 +15,7 @@
   --tertiary:#111111;
   --accent:rgb(1, 81, 255);
   --heading:white;
+  --next:rgb(21, 21, 178);
 }
 
 .dark {
@@ -24,6 +25,7 @@
   --tertiary:#ffffff;
   --accent:rgb(255, 1, 98);
   --heading:white;
+  --next:rgb(30, 163, 25);
 }
 
 .other {
@@ -33,10 +35,15 @@
   --tertiary:#ffffff;
   --accent:rgb(69, 255, 1);
   --heading:white;
+  --next:rgb(251, 166, 47);
 }
 
 .material-symbols-outlined {
+  transition: color 0.4s;
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 10, "opsz" 48;
+}
+.material-symbols-outlined:hover {
+  color: var(--next);
 }
 
 body {
@@ -63,6 +70,7 @@ body {
   gap: 2vh;
 }
 #nav a {
+  margin-right: 1vh;
   text-decoration: none;
   font-size: 1.3em;
   color: var(--tertiary);
@@ -110,12 +118,12 @@ body {
   align-items: center;
 }
 #Hero h1 {
-  font-family: "Righteous", cursive;
-  color: var(--heading);
+  padding: 1.7vh;
   font-size: 10em;
+  font-family: "Righteous", cursive;
+  color: var(--base);
   text-align: center;
   z-index: 10;
-  text-shadow: 1vh 1vh var(--base);
 }
 #Hero h1 span {
   transition: color 0.4s;
@@ -139,9 +147,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.card {
-  height: 20vw;
+#about .card {
   width: 90vw;
   display: flex;
   flex-direction: column;
@@ -150,7 +156,7 @@ body {
   text-align: center;
   border-radius: var(--radius);
   border: var(--secondary) solid 0.3vh;
-  font-size: 2vw;
+  font-size: 3vh;
 }
 
 .rotate {
@@ -176,6 +182,7 @@ body {
   }
 }
 #announcments {
+  padding-bottom: 20vh;
   width: 100vw;
   display: flex;
   gap: 5vw;
@@ -198,7 +205,10 @@ body {
   font-size: 7vw;
 }
 #announcement #Timing {
+  position: relative;
+  top: -2vh;
   font-size: 3vw;
+  font-weight: 400;
   color: var(--accent);
 }
 #announcement #Description {
