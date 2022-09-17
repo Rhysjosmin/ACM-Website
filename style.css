@@ -14,6 +14,7 @@
   --secondary:gray;
   --tertiary:#111111;
   --accent:rgb(1, 81, 255);
+  --heading:white;
 }
 
 .dark {
@@ -22,6 +23,7 @@
   --secondary:rgb(70, 70, 70);
   --tertiary:#ffffff;
   --accent:rgb(255, 1, 98);
+  --heading:white;
 }
 
 .other {
@@ -30,6 +32,7 @@
   --secondary:rgb(70, 70, 70);
   --tertiary:#ffffff;
   --accent:rgb(69, 255, 1);
+  --heading:white;
 }
 
 .material-symbols-outlined {
@@ -70,6 +73,33 @@ body {
   color: var(--accent);
 }
 
+.ani1 {
+  -webkit-animation: ani1 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+          animation: ani1 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+}
+@-webkit-keyframes ani1 {
+  0% {
+    opacity: 0;
+  }
+  50%, 80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes ani1 {
+  0% {
+    opacity: 0;
+  }
+  50%, 80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 #Hero {
   line-height: 6.5em;
   height: 100vh;
@@ -81,12 +111,14 @@ body {
 }
 #Hero h1 {
   font-family: "Righteous", cursive;
-  color: var(--base);
+  color: var(--heading);
   font-size: 10em;
   text-align: center;
   z-index: 10;
+  text-shadow: 1vh 1vh black;
 }
 #Hero h1 span {
+  transition: color 0.4s;
   color: var(--accent);
   font-size: 0.6em;
   z-index: 10;
