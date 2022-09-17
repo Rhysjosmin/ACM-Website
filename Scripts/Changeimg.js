@@ -8,7 +8,7 @@ function changeImg(){
     void img.offsetWidth;
     img.classList.add('ani1');
     
-    img.src='./media/Img/Img_'+i.toString().concat(".jpg")
+    img.src='./media/Img/Img_'+i.toString().concat(".JPG")
     i++;
 
  
