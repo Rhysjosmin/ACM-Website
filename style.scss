@@ -83,7 +83,7 @@ z-index: 100;
             
             opacity: 0;
         }
-        50%,80%{
+        50%,60%{
             opacity: 1;
         }
         100%{
@@ -108,7 +108,7 @@ h1{
     font-size: 10em;
     text-align: center;
     z-index: 10;
-    text-shadow: 1vh 1vh black;
+    text-shadow: 1vh 1vh var(--base);
     span{
         transition: color .4s;
      color:var(--accent);

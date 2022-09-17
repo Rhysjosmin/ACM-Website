@@ -1,3 +1,4 @@
+
 setInterval(()=>changeImg(),4000);
 const img =document.getElementById('Heroimg');
 let i=2;

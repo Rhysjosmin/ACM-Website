@@ -81,7 +81,7 @@ body {
   0% {
     opacity: 0;
   }
-  50%, 80% {
+  50%, 60% {
     opacity: 1;
   }
   100% {
@@ -92,7 +92,7 @@ body {
   0% {
     opacity: 0;
   }
-  50%, 80% {
+  50%, 60% {
     opacity: 1;
   }
   100% {
@@ -115,7 +115,7 @@ body {
   font-size: 10em;
   text-align: center;
   z-index: 10;
-  text-shadow: 1vh 1vh black;
+  text-shadow: 1vh 1vh var(--base);
 }
 #Hero h1 span {
   transition: color 0.4s;
