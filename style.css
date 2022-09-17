@@ -141,13 +141,13 @@ body {
   border-radius: var(--radius);
 }
 
-#about {
+#info {
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#about .card {
+#info .card {
   width: 90vw;
   display: flex;
   flex-direction: column;
