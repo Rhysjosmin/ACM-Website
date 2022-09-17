@@ -35,7 +35,7 @@
 }
 .other{
     --radius:2vw;
-    --base:hsl(140, 100%, .8%);
+    --base:rgb(1, 25, 7);
     --secondary:rgb(70, 70, 70);
     --tertiary:#ffffff;
     --accent:rgb(69, 255, 1);
@@ -64,19 +64,20 @@ body{
     font-family: 'Titillium Web', sans-serif;
 }
 #nav{
+    backdrop-filter: blur(50px);
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 position: fixed;
 z-index: 100;
-   background: var(--base);
+ 
     display: flex;
     width: 100%;
     height: 3em;
     align-items: center;
     justify-content: flex-end;
     gap: 2vh;
-    a{
+    a,H8{
         margin-right: 1vh;
         text-decoration: none;
         font-size: 1.3em;
@@ -152,11 +153,14 @@ img{
 
 #info{
     
+    position: relative;
+    
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     .card{
+        backdrop-filter: blur(50px);
 
         width: 90vw;
         //background: var(--secondary);
@@ -184,6 +188,8 @@ img{
     }
 }
 #announcments{
+    
+    position: relative;
    padding-bottom: 20vh;
     width: 100vw;
     display: flex;
@@ -193,7 +199,8 @@ img{
     justify-content: center;
 }
 #announcement{
-
+    background: #00000011;
+    backdrop-filter: blur(50px);
 display: flex;
 flex-direction: column;
 justify-content: space-around;
@@ -228,6 +235,7 @@ justify-content: space-around;
     display: flex;
     justify-content: space-between;
         a{
+            backdrop-filter: blur(-100px);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -243,4 +251,57 @@ justify-content: space-around;
           }
         }
     }
+}
+
+#about{
+
+    backdrop-filter: blur(50px);
+    height: 100vh;
+    width: 0vw;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #aboutInside{
+      width: 90%;
+        height: 85%;
+    }
+    #Members{
+
+        padding: 2vw;
+     display: flex;
+        
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1vw;
+        img{
+            width: 30vh;
+            height: 30vh;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}
+.visible{
+  
+position: fixed;
+top: 0;
+right: 0;
+
+width: 60vw !important;
+z-index: 10;
+box-shadow: -2vh 0vh 8vh rgba(0, 0, 0, 0.2);
+
+
+}
+.invisible{
+    color: rgba(255, 255, 255, 0);
+    position: fixed;
+top: 0;
+right: 0;
+
+width: 0vw !important;
+z-index: 10;
+box-shadow: -2vh 0vh 8vh rgba(0, 0, 0, 0.2);
+opacity: 0;
 }

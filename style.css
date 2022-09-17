@@ -30,7 +30,7 @@
 
 .other {
   --radius:2vw;
-  --base:hsl(140, 100%, .8%);
+  --base:rgb(1, 25, 7);
   --secondary:rgb(70, 70, 70);
   --tertiary:#ffffff;
   --accent:rgb(69, 255, 1);
@@ -55,13 +55,14 @@ body {
 }
 
 #nav {
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   -moz-user-select: none;
        user-select: none; /* Standard syntax */
   position: fixed;
   z-index: 100;
-  background: var(--base);
   display: flex;
   width: 100%;
   height: 3em;
@@ -69,7 +70,7 @@ body {
   justify-content: flex-end;
   gap: 2vh;
 }
-#nav a {
+#nav a, #nav H8 {
   margin-right: 1vh;
   text-decoration: none;
   font-size: 1.3em;
@@ -77,7 +78,7 @@ body {
   padding: 0.5vw;
   transition: color 0.7s;
 }
-#nav a:hover {
+#nav a:hover, #nav H8:hover {
   color: var(--accent);
 }
 
@@ -142,12 +143,15 @@ body {
 }
 
 #info {
+  position: relative;
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #info .card {
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
   width: 90vw;
   display: flex;
   flex-direction: column;
@@ -182,6 +186,7 @@ body {
   }
 }
 #announcments {
+  position: relative;
   padding-bottom: 20vh;
   width: 100vw;
   display: flex;
@@ -192,6 +197,9 @@ body {
 }
 
 #announcement {
+  background: rgba(0, 0, 0, 0.0666666667);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -221,6 +229,8 @@ body {
   justify-content: space-between;
 }
 #announcement #Buttons a {
+  -webkit-backdrop-filter: blur(-100px);
+          backdrop-filter: blur(-100px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,4 +245,53 @@ body {
 }
 #announcement #Buttons a:hover {
   background: var(--accent);
+}
+
+#about {
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  height: 100vh;
+  width: 0vw;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about #aboutInside {
+  width: 90%;
+  height: 85%;
+}
+#about #Members {
+  padding: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1vw;
+}
+#about #Members img {
+  width: 30vh;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.visible {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60vw !important;
+  z-index: 10;
+  box-shadow: -2vh 0vh 8vh rgba(0, 0, 0, 0.2);
+}
+
+.invisible {
+  color: rgba(255, 255, 255, 0);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0vw !important;
+  z-index: 10;
+  box-shadow: -2vh 0vh 8vh rgba(0, 0, 0, 0.2);
+  opacity: 0;
 }

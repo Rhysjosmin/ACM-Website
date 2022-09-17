@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" media="screen" href="./Stylesheets/particles.css">
 
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -10,12 +11,13 @@
     <title>ACM</title>
 </head>
 <body id="body" class="">
+    <div id="P-cont"><div id="particles-js"></div></div>
 <section id="nav">
         <span class="material-symbols-outlined rotate" onclick="darkmode()" id="Darkmode_button">dark_mode
         </span>
 
-        <a href="">Home</a>
-        <a href="">About</a>
+        
+        <h8 href="" onclick="ABOUT()">About</h8>
 </section>
 
 <section id="Hero">
@@ -49,13 +51,32 @@
 
 </section>
 
-<section id="about">
+<section id="about" class="invisible" >
+    <div id="aboutInside">
+      <h1>ABOUT</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta corrupti asperiores quas quo enim pariatur cum ullam aperiam? Debitis harum voluptatem illo exercitationem odit tempora, hic molestiae cupiditate deserunt saepe.</p>  
+<br>
+<h2>MEMBERS</h2>
+<div id="Members">
+    <img src="./media/Img/Img_5.JPG" alt="">
+    <img src="./media/Img/Img_5.JPG" alt="">
+    <img src="./media/Img/Img_5.JPG" alt="">
+    <img src="./media/Img/Img_5.JPG" alt="">
+    <img src="./media/Img/Img_5.JPG" alt="">
+    <img src="./media/Img/Img_5.JPG" alt="">
+    <img src="./media/Img/Img_5.JPG" alt="">
+  
+</div>
+    </div>
 
 </section>
    
 
 <script src="./Scripts/darkmode.js"></script>
 <script src="./Scripts/Changeimg.js"></script>
+<script src="./Scripts/AboutExpand.js"></script>
+<script src="./Scripts/Particles/particles.js"></script>
+<script src="./Scripts/Particles/app.js"></script>
 </body>
 
 </html>
