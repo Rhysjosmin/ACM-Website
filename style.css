@@ -55,8 +55,6 @@ body {
 }
 
 #nav {
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   -moz-user-select: none;
@@ -247,11 +245,11 @@ body {
 }
 
 #about {
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
-  height: 100vh;
+  padding: 2vh;
+  background: var(--base);
+  min-height: 100vh;
   width: 0vw;
-  transition: all 0.5s;
+  transition: all 0.2s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,6 +266,7 @@ body {
   gap: 1vw;
 }
 #about #Members img {
+  transition: all 0.2s;
   width: 30vh;
   height: 30vh;
   -o-object-fit: cover;
@@ -276,9 +275,9 @@ body {
 }
 
 .visible {
-  position: fixed;
-  top: 0;
-  right: 0;
+  position: absolute;
+  top: 0vh;
+  left: 0;
   width: 60vw !important;
   z-index: 10;
   box-shadow: -2vh 0vh 8vh rgba(0, 0, 0, 0.2);
@@ -288,9 +287,12 @@ body {
   color: rgba(255, 255, 255, 0);
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   width: 0vw !important;
   z-index: 10;
   box-shadow: -2vh 0vh 8vh rgba(0, 0, 0, 0.2);
   opacity: 0;
+}
+.invisible img {
+  border-radius: 0% !important;
 }
