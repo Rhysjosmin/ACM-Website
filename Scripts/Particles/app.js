@@ -32,7 +32,7 @@ particlesJS('particles-js',
           "color": ""
         },
         "polygon": {
-          "nb_sides": 5
+          "nb_sides": 6
         },
         "image": {
           "src": "img/github.svg",
@@ -51,12 +51,12 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 150,
+        "value": 80,
         "random": true,
         "anim": {
           "enable": true,
-          "speed": .1,
-          "size_min": 50,
+          "speed": 1,
+          "size_min": 10,
           "sync": false
         }
       },

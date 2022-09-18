@@ -292,8 +292,8 @@ var pJS = function(tag_id, params){
     }
     else if(color.value == 'random'){
       this.color.rgb = {
-        r:100,
-        g:20,
+        r:1,
+        g:200,
         b:1*(Math.floor(Math.random() * (255-80+1))+100)
       }
     }

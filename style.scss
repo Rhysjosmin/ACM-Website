@@ -24,7 +24,7 @@
 }
 .dark{
     --radius:2vw;
-    --base:#000000;
+    --base:#010101;
     --secondary:rgb(70, 70, 70);
     --tertiary:#ffffff;
     --accent:rgb(255, 1, 98);
@@ -254,17 +254,26 @@ justify-content: space-around;
 }
 
 #about{
+    backdrop-filter: blur(150px);
+    border: var(--secondary) solid .2vh;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    border-radius: 0vh 0vh 10vh 0vh;
     padding: 2vh;
-    background: var(--base);
-    min-height: 100vh;
+    //background: var(--base);
+    max-height: 150vh;
+    overflow-y: scroll;
     width: 0vw;
     transition: all .2s;
     display: flex;
     justify-content: center;
     align-items: center;
     #aboutInside{
+
       width: 90%;
-        height: 85%;
+        height: 85vh;
+ 
     }
     #Members{
 
@@ -285,9 +294,7 @@ justify-content: space-around;
 }
 .visible{
   
-position: absolute;
-top: 0vh;
-left: 0;
+
 
 width: 60vw !important;
 z-index: 10;
