@@ -64,7 +64,15 @@ body{
     font-family: 'Titillium Web', sans-serif;
 }
 #nav{
+h1{
+    font-family: 'Museomoderno';
 
+    margin-right: auto;
+    margin-left: 1vh;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--accent);
+}
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
@@ -150,11 +158,17 @@ img{
     border-radius: var(--radius);
 }
 }
+#loadingDisp{
+    font-family: 'Museomoderno';
+    color: #ffffff;
+    font-size: 4em;
+    
+}
 
 #info{
     
     position: relative;
-    
+    padding-bottom: 50vh;
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -171,7 +185,10 @@ img{
         text-align: center;
         border-radius: var(--radius);
         border: var(--secondary) solid .3vh;
-        font-size: 3vh;
+
+        min-height: 50vh;
+        font-size: 2.2em !important;
+      padding-left: vw;
     }
 }
 
@@ -199,8 +216,7 @@ img{
     justify-content: center;
 }
 #announcement{
-    background: #00000011;
-    backdrop-filter: blur(50px);
+
 display: flex;
 flex-direction: column;
 justify-content: space-around;
@@ -235,7 +251,7 @@ justify-content: space-around;
     display: flex;
     justify-content: space-between;
         a{
-            backdrop-filter: blur(-100px);
+    
             display: flex;
             justify-content: center;
             align-items: center;

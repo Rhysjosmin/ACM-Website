@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" media="screen" href="./Stylesheets/particles.css">
+    <link rel="stylesheet" media="screen" href="./Stylesheets/preload.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -11,13 +11,24 @@
     <title>ACM</title>
 </head>
 <body id="body" class="">
+
+    <section class="preload">
+        <div class="lds-ripple"><div></div><div></div></div>
+        <h2 id="loadingDisp">DBCE ACM</h2>
+        
+        
+    </section>
+    
+
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
       </script>
     </body>
-    <div id="P-cont"><div id="particles-js"></div></div>
+
 <section id="nav">
+    <h1>DBCE ACM</h1>
         <span class="material-symbols-outlined rotate" onclick="darkmode()" id="Darkmode_button">dark_mode
         </span>
 
@@ -25,10 +36,7 @@
         <h8 href="" onclick="ABOUT()">About</h8>
 </section>
 
-<section id="Hero">
-  
-    <h1><span><br><br>DBCE</span><br>ACM</h1>
-    
+<section id="Hero">    
     <img src="./media/Img/Img_1.JPG" alt="" id="Heroimg">
 </section>
 
@@ -53,6 +61,48 @@
         </div>
     </div>
   
+
+    <div id="announcement"data-aos="fade-right">
+        <h1 id="Title"><i>php</i> Webinar</h1>
+        <h3 id="Timing">13-5-22|8:30-12:30</h3>
+        <p id="Description">A popular general-purpose scripting language that is especially suited to web development.
+            Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.<br><br>
+        The DBCE ACM chapter will be conducting a course in php covering most of the important ideas behind it
+    </p>
+        <div id="Buttons">
+            <a href="">Register</a>
+            <a href="">Read More..</a>
+        </div>
+    </div>
+
+
+    <div id="announcement"data-aos="fade-right">
+        <h1 id="Title"><i>php</i> Webinar</h1>
+        <h3 id="Timing">13-5-22|8:30-12:30</h3>
+        <p id="Description">A popular general-purpose scripting language that is especially suited to web development.
+            Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.<br><br>
+        The DBCE ACM chapter will be conducting a course in php covering most of the important ideas behind it
+    </p>
+        <div id="Buttons">
+            <a href="">Register</a>
+            <a href="">Read More..</a>
+        </div>
+    </div>
+
+
+
+    <div id="announcement"data-aos="fade-right">
+        <h1 id="Title"><i>php</i> Webinar</h1>
+        <h3 id="Timing">13-5-22|8:30-12:30</h3>
+        <p id="Description">A popular general-purpose scripting language that is especially suited to web development.
+            Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.<br><br>
+        The DBCE ACM chapter will be conducting a course in php covering most of the important ideas behind it
+    </p>
+        <div id="Buttons">
+            <a href="">Register</a>
+            <a href="">Read More..</a>
+        </div>
+    </div>
 
 </section>
 
@@ -79,7 +129,7 @@
 <section id="footer"></section>
 
   
-
+<script src="./Scripts/preload.js"></script>
 <script src="./Scripts/darkmode.js"></script>
 <script src="./Scripts/Changeimg.js"></script>
 <script src="./Scripts/AboutExpand.js"></script>

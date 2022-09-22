@@ -68,6 +68,14 @@ body {
   justify-content: flex-end;
   gap: 2vh;
 }
+#nav h1 {
+  font-family: "Museomoderno";
+  margin-right: auto;
+  margin-left: 1vh;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: var(--accent);
+}
 #nav a, #nav H8 {
   margin-right: 1vh;
   text-decoration: none;
@@ -140,8 +148,15 @@ body {
   border-radius: var(--radius);
 }
 
+#loadingDisp {
+  font-family: "Museomoderno";
+  color: #ffffff;
+  font-size: 4em;
+}
+
 #info {
   position: relative;
+  padding-bottom: 50vh;
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -158,7 +173,9 @@ body {
   text-align: center;
   border-radius: var(--radius);
   border: var(--secondary) solid 0.3vh;
-  font-size: 3vh;
+  min-height: 50vh;
+  font-size: 2.2em !important;
+  padding-left: vw;
 }
 
 .rotate {
@@ -195,9 +212,6 @@ body {
 }
 
 #announcement {
-  background: rgba(0, 0, 0, 0.0666666667);
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -226,8 +240,6 @@ body {
   justify-content: space-between;
 }
 #announcement #Buttons a {
-  -webkit-backdrop-filter: blur(-100px);
-          backdrop-filter: blur(-100px);
   display: flex;
   justify-content: center;
   align-items: center;
