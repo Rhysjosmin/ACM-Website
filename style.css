@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 * {
@@ -9,83 +10,73 @@
 }
 
 :root {
-  --radius:2vw;
+  --borderBg:linear-gradient(to right, rgb(2, 107, 255), rgba(251, 251, 251, 0));
+  --background:radial-gradient(circle,rgba(108, 183, 230, 0.781),rgb(250, 233, 217));
+  --radius:.5rem;
   --base:rgb(255, 255, 255);
   --secondary:gray;
   --tertiary:#111111;
-  --accent:rgb(1, 81, 255);
+  --accent:rgb(16, 106, 249);
   --heading:white;
   --next:rgb(21, 21, 178);
 }
 
 .dark {
-  --radius:2vw;
-  --base:#010101;
+  --borderBg:linear-gradient(to right, rgba(230, 2, 143, 0.623), rgba(20, 5, 101, 0.832));
+  --background:radial-gradient(circle,rgb(41, 0, 7),#040404);
+  --base:#040404;
   --secondary:rgb(70, 70, 70);
   --tertiary:#ffffff;
   --accent:rgb(255, 1, 98);
   --heading:white;
-  --next:rgb(30, 163, 25);
-}
-
-.other {
-  --radius:2vw;
-  --base:rgb(1, 25, 7);
-  --secondary:rgb(70, 70, 70);
-  --tertiary:#ffffff;
-  --accent:rgb(69, 255, 1);
-  --heading:white;
-  --next:rgb(251, 166, 47);
+  --next:rgb(16, 106, 249);
 }
 
 .material-symbols-outlined {
-  transition: color 0.4s;
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 10, "opsz" 48;
-}
-.material-symbols-outlined:hover {
-  color: var(--next);
+  font-variation-settings: "FILL" 1, "wght" 1000, "GRAD" 10, "opsz" 48;
 }
 
 body {
+  background-position: right top;
   scroll-behavior: smooth;
   transition: color 0.5s, background-color 0.5s;
   color: var(--tertiary);
-  background: var(--base);
+  background: var(--background);
   font-family: "Titillium Web", sans-serif;
 }
 
-#nav {
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  -moz-user-select: none;
-       user-select: none; /* Standard syntax */
+nav {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   position: fixed;
-  z-index: 100;
+  z-index: 2;
   display: flex;
   width: 100%;
-  height: 3em;
+  height: 4rem;
   align-items: center;
   justify-content: flex-end;
-  gap: 2vh;
 }
-#nav h1 {
+nav span {
+  transition: color 0.4s;
+}
+nav span:hover {
+  color: var(--next);
+}
+nav h1 {
   font-family: "Museomoderno";
   margin-right: auto;
-  margin-left: 1vh;
-  font-size: 1.3em;
+  margin-left: 2.5%;
+  font-size: 2em;
   font-weight: 600;
   color: var(--accent);
 }
-#nav a, #nav H8 {
-  margin-right: 1vh;
-  text-decoration: none;
-  font-size: 1.3em;
-  color: var(--tertiary);
-  padding: 0.5vw;
-  transition: color 0.7s;
-}
-#nav a:hover, #nav H8:hover {
-  color: var(--accent);
+nav #NavLinks {
+  display: flex;
+  gap: 2vh;
+  margin-left: auto;
+  margin-right: 2.5%;
 }
 
 .ani1 {
@@ -116,7 +107,6 @@ body {
 }
 
 #Hero {
-  line-height: 6.5em;
   height: 100vh;
   max-width: 100vw;
   display: flex;
@@ -132,11 +122,32 @@ body {
   text-align: center;
   z-index: 10;
 }
-#Hero h1 span {
-  transition: color 0.4s;
-  color: var(--accent);
-  font-size: 0.6em;
+#Hero #imgControl {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
+#Hero #imgControl .controls {
+  position: relative;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  background: var(--base);
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  transition: translate 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: default;
   z-index: 10;
+}
+#Hero #imgControl #back:hover {
+  translate: -30%;
+}
+#Hero #imgControl #forward:hover {
+  translate: 30%;
 }
 #Hero img {
   position: absolute;
@@ -145,7 +156,7 @@ body {
   height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: var(--radius);
+  border-radius: 0.5rem;
 }
 
 #loadingDisp {
@@ -155,7 +166,6 @@ body {
 }
 
 #info {
-  position: relative;
   padding-bottom: 50vh;
   height: 80vh;
   display: flex;
@@ -163,19 +173,59 @@ body {
   align-items: center;
 }
 #info .card {
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
+  z-index: 1;
+  border-radius: var(--radius);
   width: 90vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius: var(--radius);
-  border: var(--secondary) solid 0.3vh;
   min-height: 50vh;
   font-size: 2.2em !important;
-  padding-left: vw;
+}
+
+.card {
+  border: var(--secondary) solid 0.3vh;
+  border-radius: var(--radius);
+  border: transparent solid 2px;
+}
+
+.cardBorder {
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  background: var(--base);
+  background-clip: content-box; /* !importanté */
+  border: solid 2px transparent; /* !importanté */
+  border-radius: var(--radius);
+}
+.cardBorder:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px; /* !importanté */
+  border-radius: inherit; /* !importanté */
+  background: var(--borderBg);
+}
+.cardBorder:after {
+  opacity: 40%;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px; /* !importanté */
+  border-radius: inherit; /* !importanté */
+  background: var(--borderBg);
+  filter: blur(50px);
 }
 
 .rotate {
@@ -212,26 +262,23 @@ body {
 }
 
 #announcement {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  border-radius: var(--radius);
-  border: var(--secondary) solid 0.3vh;
-  width: 80vw;
-  min-height: 45vw;
-  padding: 2vw;
+  display: grid;
+  grid-template-rows: 6em 3em 70%;
+  width: min(60rem, 85vw);
+  aspect-ratio: 16/10;
+  padding: 1.2rem;
 }
 #announcement #Title {
-  font-size: 7vw;
+  font-size: 3.5em;
 }
 #announcement #Timing {
   position: relative;
-  font-size: 3vw;
+  font-size: 1.5em;
   font-weight: 400;
   color: var(--accent);
 }
 #announcement #Description {
-  font-size: 3vw;
+  font-size: 1.3em;
 }
 #announcement #Buttons {
   position: relative;
@@ -240,11 +287,13 @@ body {
   justify-content: space-between;
 }
 #announcement #Buttons a {
+  font-weight: 400;
+  font-size: 1.3em;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 2.4em;
+  height: 2.8rem;
   border-radius: var(--radius);
   width: 48%;
   border: var(--secondary) solid 0.3vh;
@@ -256,59 +305,51 @@ body {
   background: var(--accent);
 }
 
-#about {
-  -webkit-backdrop-filter: blur(150px);
-          backdrop-filter: blur(150px);
-  border: var(--secondary) solid 0.2vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 0vh 0vh 10vh 0vh;
-  padding: 2vh;
-  max-height: 150vh;
-  overflow-y: scroll;
-  width: 0vw;
-  transition: all 0.2s;
+#aboutContainer {
+  pointer-events: none;
+  z-index: 10;
+  position: fixed;
+  top: 0%;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+#aboutContainer .cardBorder {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-#about #aboutInside {
-  width: 90%;
-  height: 85vh;
-}
-#about #Members {
-  padding: 2vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1vw;
-}
-#about #Members img {
-  transition: all 0.2s;
-  width: 30vh;
-  height: 30vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
+  width: 75%;
 }
 
-.visible {
-  width: 60vw !important;
-  z-index: 10;
-  box-shadow: -2vh 0vh 8vh rgba(0, 0, 0, 0.2);
+#about {
+  pointer-events: all;
+  aspect-ratio: 16/9;
+  text-align: center;
+  display: grid;
+  transition: color 700ms, background-color 700ms;
+}
+#about h1 {
+  height: 20%;
 }
 
 .invisible {
+  background: rgba(1, 1, 1, 0);
   color: rgba(255, 255, 255, 0);
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 0vw !important;
+  top: -100rem;
   z-index: 10;
   box-shadow: -2vh 0vh 8vh rgba(0, 0, 0, 0.2);
   opacity: 0;
 }
 .invisible img {
   border-radius: 0% !important;
+}
+
+#AboutBG {
+  background: rgba(0, 0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  transition: 300ms;
+  z-index: -2;
 }

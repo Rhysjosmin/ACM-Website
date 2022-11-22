@@ -19,15 +19,9 @@ function darkmode(){
         
     }else if(DKMDBtn.textContent.includes("dark_mode")){
         body.className="dark"
-        DKMDBtn.textContent="hive" ;
+        DKMDBtn.textContent="light_mode" ;
 
         localStorage.setItem("darkMode","Dark");
-
-
-    }else if(DKMDBtn.textContent.includes("hive")){
-        body.className="other"
-        DKMDBtn.textContent="light_mode" ;
-        localStorage.setItem("darkMode","Other");
 
 
     }
@@ -51,7 +45,7 @@ function MemDkMD(){
     if(darkMode=="Dark"){
         //enable Dark
         body.className="dark"
-        DKMDBtn.textContent="hive" ;
+        DKMDBtn.textContent="light_mode" ;
         localStorage.setItem("darkMode","Dark");
 
 
@@ -63,10 +57,5 @@ function MemDkMD(){
         DKMDBtn.classList.add('HIVE')
         localStorage.setItem("darkMode","Light");
 
-    }else  if(darkMode=="Other"){
-        //enable Other
-        body.className="other"
-        DKMDBtn.textContent="light_mode" ;
-        localStorage.setItem("darkMode","Other");
     }
 }

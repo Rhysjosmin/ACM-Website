@@ -12,13 +12,13 @@
 </head>
 <body id="body" class="">
 
-    <section class="preload">
+    <!-- <section class="preload">
         <div class="lds-ripple"><div></div><div></div></div>
         <h2 id="loadingDisp">DBCE ACM</h2>
         
         
     </section>
-    
+     -->
 
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -27,28 +27,45 @@
       </script>
     </body>
 
-<section id="nav">
-    <h1>DBCE ACM</h1>
-        <span class="material-symbols-outlined rotate" onclick="darkmode()" id="Darkmode_button">dark_mode
-        </span>
+<nav id="nav">
 
-        
-        <h8 href="" onclick="ABOUT()">About</h8>
-</section>
+    <h1>DBCE ACM</h1>
+    
+    <div id="NavLinks">
+          <span class="material-symbols-outlined rotate" onclick="darkmode()" id="Darkmode_button">dark_mode</span>
+    <span class="material-symbols-outlined " onclick="ABOUT()">question_mark</span>  
+    </div>
+
+    </nav>
 
 <section id="Hero">    
     <img src="./media/Img/Img_1.JPG" alt="" id="Heroimg">
+    <div id="imgControl">
+      
+        <span class="material-symbols-outlined controls" id="back" onclick="NextImg()">
+            arrow_back_ios
+        </span>
+        <span class="material-symbols-outlined controls" id="forward"  onclick="PrevImg()">
+            arrow_forward_ios
+        </span>
+    </div>
+ 
 </section>
+   
+        
 
 <section id="info">
+    <div class="cardBorder" >
     <div class="card">
         <h1>The Goal</h1>
         <p>We see a world where computing helps solve tomorrow's problems - where we use our knowledge and skills to advance the profession and make a positive impact.</p>
     </div>
+    </div>
 </section>
 
-<section id="announcments">
-    <div id="announcement"data-aos="fade-right">
+<section id="announcments" >
+    <div class="cardBorder" >
+     <div id="announcement" class="card">
         <h1 id="Title"><i>php</i> Webinar</h1>
         <h3 id="Timing">13-5-22|8:30-12:30</h3>
         <p id="Description">A popular general-purpose scripting language that is especially suited to web development.
@@ -59,71 +76,22 @@
             <a href="">Register</a>
             <a href="">Read More..</a>
         </div>
+    </div>   
     </div>
+    
   
 
-    <div id="announcement"data-aos="fade-right">
-        <h1 id="Title"><i>php</i> Webinar</h1>
-        <h3 id="Timing">13-5-22|8:30-12:30</h3>
-        <p id="Description">A popular general-purpose scripting language that is especially suited to web development.
-            Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.<br><br>
-        The DBCE ACM chapter will be conducting a course in php covering most of the important ideas behind it
-    </p>
-        <div id="Buttons">
-            <a href="">Register</a>
-            <a href="">Read More..</a>
-        </div>
-    </div>
-
-
-    <div id="announcement"data-aos="fade-right">
-        <h1 id="Title"><i>php</i> Webinar</h1>
-        <h3 id="Timing">13-5-22|8:30-12:30</h3>
-        <p id="Description">A popular general-purpose scripting language that is especially suited to web development.
-            Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.<br><br>
-        The DBCE ACM chapter will be conducting a course in php covering most of the important ideas behind it
-    </p>
-        <div id="Buttons">
-            <a href="">Register</a>
-            <a href="">Read More..</a>
-        </div>
-    </div>
-
-
-
-    <div id="announcement"data-aos="fade-right">
-        <h1 id="Title"><i>php</i> Webinar</h1>
-        <h3 id="Timing">13-5-22|8:30-12:30</h3>
-        <p id="Description">A popular general-purpose scripting language that is especially suited to web development.
-            Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.<br><br>
-        The DBCE ACM chapter will be conducting a course in php covering most of the important ideas behind it
-    </p>
-        <div id="Buttons">
-            <a href="">Register</a>
-            <a href="">Read More..</a>
-        </div>
-    </div>
 
 </section>
 
-<section id="about" class="invisible" >
-    <div id="aboutInside">
+<section id="aboutContainer" class="invisible " >
+    <div class="cardBorder" >
+    <div id="about" class="card">
       <h1>ABOUT</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta corrupti asperiores quas quo enim pariatur cum ullam aperiam? Debitis harum voluptatem illo exercitationem odit tempora, hic molestiae cupiditate deserunt saepe.</p>  
-<br>
-<h2>MEMBERS</h2>
-<div id="Members">
-    <img src="./media/Img/Img_5.JPG" alt="">
-    <img src="./media/Img/Img_5.JPG" alt="">
-    <img src="./media/Img/Img_5.JPG" alt="">
-    <img src="./media/Img/Img_5.JPG" alt="">
-    <img src="./media/Img/Img_5.JPG" alt="">
-    <img src="./media/Img/Img_5.JPG" alt="">
-    <img src="./media/Img/Img_5.JPG" alt="">
-  
-</div>
+    <p>We see a world where computing helps solve tomorrow's problems - where we use our knowledge and skills to advance the profession and make a positive impact.</p>  
     </div>
-
+    </div>
+<div id="AboutBG" onclick="ABOUT()"></div>
 </section>
 
 <section id="footer"></section>
