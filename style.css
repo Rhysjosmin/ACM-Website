@@ -196,6 +196,15 @@ nav #NavLinks {
   border: transparent solid 2px;
 }
 
+.presenter {
+  font-weight: 300;
+  font-size: 0.5em;
+  color: var(--secondary);
+}
+.presenter::before {
+  content: " -";
+}
+
 .cardBorder {
   display: flex;
   align-items: center;
@@ -219,7 +228,7 @@ nav #NavLinks {
   background: var(--borderBg);
 }
 .cardBorder:after {
-  opacity: 40%;
+  opacity: 10%;
   content: "";
   position: absolute;
   top: 0;
@@ -230,7 +239,7 @@ nav #NavLinks {
   margin: -2px; /* !importanté */
   border-radius: inherit; /* !importanté */
   background: var(--borderBg);
-  filter: blur(50px);
+  filter: blur(30px);
 }
 
 .rotate {
@@ -295,7 +304,7 @@ nav #NavLinks {
 #announcement {
   display: grid;
   grid-template-rows: 6em 3em 70%;
-  width: min(60rem, 85vw);
+  width: 45rem;
   aspect-ratio: 16/10;
   padding: 1.2rem;
 }
@@ -358,13 +367,17 @@ nav #NavLinks {
 
 #about {
   pointer-events: all;
-  aspect-ratio: 16/9;
+  min-height: 32rem;
   text-align: center;
   display: grid;
-  transition: color 700ms, background-color 700ms;
+  grid-template-rows: 4rem 9rem;
+  transition: 700ms;
 }
 #about h1 {
-  height: 20%;
+  font-size: min(5vw, 3em);
+}
+#about p {
+  font-size: min(3vw, 1.3em);
 }
 
 .visible {
@@ -433,7 +446,7 @@ nav #NavLinks {
   }
 }
 .event {
-  animation: scroll 30s linear 0s infinite alternate-reverse;
+  animation: scroll 30s linear 10ms infinite alternate-reverse;
   border-radius: var(--radius);
   transition: 400ms ease;
   text-decoration: none;
@@ -442,6 +455,22 @@ nav #NavLinks {
   height: 30rem;
   width: 20rem;
   border-radius: inherit;
+}
+.event .cardBorder {
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  background-clip: content-box; /* !importanté */
+  border: solid 2px transparent; /* !importanté */
+  border-radius: var(--radius);
+}
+.event .cardBorder:before {
+  background: none;
+}
+.event .cardBorder:after {
+  opacity: 20%;
+  background: linear-gradient(to right, rgb(0, 191, 255), rgb(67, 18, 246));
 }
 .event:hover {
   transform: translateY(-0.7rem);

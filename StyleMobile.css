@@ -1,0 +1,25 @@
+@import url(./style.scss);
+@media (max-width: 400px) {
+  nav {
+    position: absolute;
+    background: #020202;
+  }
+  #imgControl {
+    display: none !important;
+  }
+  #Hero img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.card {
+  height: 100vh;
+  width: 100vw;
+}
+
+.cardBorder {
+  width: 100vw;
+}
+.cardBorder::before, .cardBorder::after {
+  background: none;
+}
