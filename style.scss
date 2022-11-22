@@ -134,6 +134,7 @@ color: var(--base);
   
 }
 #imgControl{
+    user-select: none;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -141,30 +142,43 @@ color: var(--base);
 
     position: absolute;
   
-z-index: 1;
+z-index: 10;
+.cardBorder{
+display: grid;
+place-items: center;
+}
 .controls{
 position: relative;
-    display: grid;
-    place-items: center;
-    border-radius: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+    border-radius: 1.5rem;
     background: var(--base);
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     text-align: center;
-    transition: translate 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 300ms ;
     cursor: default;
 
 
- z-index: 10;
 
-    
+    z-index: 10;
+
+
+
+ 
     
 }
+
 #back:hover{
-    translate:-30%;
+
+translate: -1rem;
+
 }
 #forward:hover{
-    translate:30%;
+    translate: 1rem;
+
+  
 }
 }
 

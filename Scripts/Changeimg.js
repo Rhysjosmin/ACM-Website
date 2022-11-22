@@ -3,7 +3,7 @@ setInterval(()=>changeImg(),4500);
 const img =document.getElementById('Heroimg');
 let i=2;
 const MAXIMG=9
-const MINIMG=1
+const MINIMG=2
 function changeImg(){
     //img.classList.remove('ani1');
     //void img.offsetWidth;
@@ -13,8 +13,8 @@ function changeImg(){
     i++;
 
  
-    if(i==MAXIMG){
-        i=1;
+    if(i>MAXIMG){
+        i=MINIMG;
     }
 }
 
@@ -23,7 +23,7 @@ function NextImg(){
     i++;
 
  
-    if(i==MAXIMG){
+    if(i>MAXIMG){
         i=MINIMG;
     }
 
@@ -34,7 +34,7 @@ function PrevImg(){
     i--;
 
  
-    if(i==MINIMG){
+    if(i<MINIMG){
         i=MAXIMG;
     }
 }
