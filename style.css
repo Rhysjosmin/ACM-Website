@@ -23,7 +23,7 @@
 
 .dark {
   --borderBg:linear-gradient(to right, rgba(230, 2, 143, 0.623), rgba(20, 5, 101, 0.832));
-  --background:radial-gradient(circle,rgb(41, 0, 7),#040404);
+  --background:radial-gradient(circle at top,rgb(41, 0, 7),#040404);
   --base:#040404;
   --secondary:rgb(70, 70, 70);
   --tertiary:#ffffff;
@@ -168,27 +168,23 @@ nav #NavLinks {
   border-radius: 0.5rem;
 }
 
-#loadingDisp {
-  font-family: "Museomoderno";
-  color: #ffffff;
-  font-size: 4em;
-}
-
 #info {
-  padding-bottom: 50vh;
-  height: 80vh;
+  font-weight: 100;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#info h1 {
+  font-weight: 700;
 }
 #info .card {
+  padding: 1rem;
   z-index: 1;
   border-radius: var(--radius);
-  width: 90vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 80vw;
+  display: grid;
+  grid-template-rows: 2.5em;
   text-align: center;
   min-height: 50vh;
   font-size: 2.2em !important;
@@ -270,6 +266,31 @@ nav #NavLinks {
   justify-content: center;
 }
 
+.calendar {
+  background: #ffffff;
+  width: 3.3rem;
+  translate: 0 5px;
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-rows: 0.5rem 2.5rem;
+  place-items: center;
+  font-weight: 700;
+  border: 1px solid rgb(38, 38, 38);
+}
+.calendar .month {
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: red;
+  width: 100%;
+  border: inherit;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1rem;
+}
+.calendar .day {
+  color: black;
+  font-size: 1.2rem;
+}
+
 #announcement {
   display: grid;
   grid-template-rows: 6em 3em 70%;
@@ -278,6 +299,10 @@ nav #NavLinks {
   padding: 1.2rem;
 }
 #announcement #Title {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
   font-size: 3.5em;
 }
 #announcement #Timing {
@@ -341,11 +366,16 @@ nav #NavLinks {
   height: 20%;
 }
 
+.visible {
+  top: 0rem !important;
+}
+
 .invisible {
+  display: none !important;
   background: rgba(1, 1, 1, 0);
   color: rgba(255, 255, 255, 0);
   position: fixed;
-  top: -100rem;
+  top: -100rem !important;
   z-index: 10;
   box-shadow: -2vh 0vh 8vh rgba(0, 0, 0, 0.2);
   opacity: 0;

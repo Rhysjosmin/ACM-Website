@@ -1,4 +1,30 @@
 
+:root{
+  --borderBg:linear-gradient(to right,  rgb(2, 107, 255), rgba(251, 251, 251, 0));
+  --background:radial-gradient(circle,rgba(108, 183, 230, 0.781),rgb(250, 233, 217));
+  --radius:.5rem;
+  --base:rgb(255, 255, 255);
+  --secondary:gray;
+  --tertiary:#111111;
+  --accent:rgb(16, 106, 249);
+  --heading:white;
+  --next:rgb(21, 21, 178);
+
+  
+}
+.dark{
+  --borderBg:linear-gradient(to right,  rgba(230, 2, 143, 0.623), rgba(20, 5, 101, 0.832));
+
+  --background:radial-gradient(circle,rgb(41, 0, 7),#040404);
+  --base:#040404;
+  --secondary:rgb(70, 70, 70);
+  --tertiary:#ffffff;
+  --accent:rgb(255, 1, 98);
+  --heading:white;
+  --next:rgb(16, 106, 249);
+
+
+}
 
 
 .preload {
@@ -14,12 +40,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 10;
-    background: rgb(0, 0, 0);
+    z-index: 10000;
+    background: var(--base);
+    color: var(--tertiary);
     transition: opacity 0.4s ease 1s;
     overflow: hidden;
     
   } 
+  #loadingDisp{
+    z-index: inherit;;
+    font-family: 'Museomoderno';
+    color: var(--tertiary);
+    font-size: 4em;
+    
+}
   .preload-finish {
     opacity: 0;
     pointer-events: none;
@@ -27,6 +61,7 @@
   
   //loader
   .lds-ripple {
+    z-index: inherit;
     display: inline-block;
     position: relative;
     width: 80px;
@@ -34,7 +69,7 @@
   }
   .lds-ripple div {
     position: absolute;
-    border: 4px solid #fff;
+    border: 4px solid var(--tertiary);
     opacity: 1;
     border-radius: 50%;
     animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
