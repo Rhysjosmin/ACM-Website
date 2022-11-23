@@ -10,10 +10,10 @@ function darkmode(){
     DKMDBtn.classList.add('rotate');
     
     if(DKMDBtn.textContent.includes("light_mode")){
-        
+        body.className="hive"
         DKMDBtn.textContent="dark_mode" ;
 
-   
+        DKMDBtn.classList.add('HIVE')
         localStorage.setItem("darkMode","Light");
         
         
