@@ -5,9 +5,6 @@
   margin: 0%;
   padding: 0%;
 }
-*::-webkit-scrollbar {
-  display: none;
-}
 
 :root {
   --borderBg:linear-gradient(to right, rgb(14, 193, 252), rgba(255, 108, 172, 0.95));
@@ -408,6 +405,10 @@ nav #NavLinks {
 }
 
 #EventReports {
+  scroll-padding-block-start: 4rem;
+  overflow-y: hidden;
+  white-space: nowrap;
+  overflow-x: auto;
   height: 80vh;
   display: flex;
   justify-content: space-evenly;
@@ -446,7 +447,10 @@ nav #NavLinks {
   }
 }
 .event {
-  animation: scroll 30s linear 10ms infinite alternate-reverse;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   border-radius: var(--radius);
   transition: 400ms ease;
   text-decoration: none;

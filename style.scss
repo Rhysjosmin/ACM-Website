@@ -4,9 +4,9 @@
 *{
     margin: 0%;
     padding: 0%;
-    &::-webkit-scrollbar{
-        display: none;
-    }
+    // &::-webkit-scrollbar{
+    //     display: none;
+    // }
     
     
 }
@@ -488,6 +488,11 @@ transition:  300ms;
 }
 
 #EventReports{
+    scroll-padding-block-start: 4rem;
+ 
+    overflow-y: hidden;
+    white-space: nowrap;
+    overflow-x: auto;
     height: 80vh;
     display: flex;
     justify-content: space-evenly;
@@ -517,7 +522,8 @@ margin-bottom: 13rem;
     }
 }
 .event{
-   animation: scroll 30s linear 10ms infinite alternate-reverse;
+    user-select: none;
+//    animation: scroll 30s linear 10ms infinite alternate-reverse;
     border-radius: var(--radius);
     .cardBorder{
       height: 30rem;

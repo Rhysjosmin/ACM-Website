@@ -8,25 +8,43 @@
     display: none !important;
   }
   #Hero img {
-    width: 100%;
+    margin-top: 5rem;
+    width: 95%;
     height: 100%;
   }
   .card {
     background-color: transparent;
-    height: 100vh;
   }
   .cardBorder {
-    background: none;
-    width: 100vw;
+    background-color: transparent;
+    border-radius: 4px;
+    width: 97vw;
   }
   .cardBorder::before, .cardBorder::after {
     background: none;
   }
+  #announcments {
+    margin-top: 5rem;
+    position: relative;
+    padding-bottom: 20vh;
+    width: 100vw;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #announcments .cardBorder {
+    border: none;
+    border-top: rgb(255, 255, 255) solid 1px;
+    -o-border-image: linear-gradient(to left, rgba(149, 0, 255, 0.226), rgba(255, 0, 89, 0.235)) 30;
+       border-image: linear-gradient(to left, rgba(149, 0, 255, 0.226), rgba(255, 0, 89, 0.235)) 30;
+  }
   #announcement {
     display: grid;
-    grid-template-rows: 2em 3em 70%;
-    width: 45rem;
-    aspect-ratio: 9/16;
+    grid-template-rows: 5.5em 2.5em 70%;
+    height: 90vh;
+    aspect-ratio: 9/20;
     padding: 1.2rem;
   }
   #announcement .presenter {
@@ -35,9 +53,11 @@
     color: var(--secondary);
   }
   #announcement .presenter::before {
-    content: "\a-";
+    content: "\a";
+    white-space: pre;
   }
   #announcement #Title {
+    line-height: 1.8rem;
     display: flex;
     align-items: center;
     justify-content: left;
