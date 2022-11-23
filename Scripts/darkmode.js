@@ -10,10 +10,10 @@ function darkmode(){
     DKMDBtn.classList.add('rotate');
     
     if(DKMDBtn.textContent.includes("light_mode")){
-        body.className="hive"
+        
         DKMDBtn.textContent="dark_mode" ;
 
-        DKMDBtn.classList.add('HIVE')
+   
         localStorage.setItem("darkMode","Light");
         
         
@@ -29,12 +29,7 @@ function darkmode(){
 }
 
 
-if (window.matchMedia) {
-    if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-        body.className="dark"
-        DKMDBtn.textContent="hive" ;
-    } 
-  } 
+
 
 
 
@@ -50,11 +45,10 @@ function MemDkMD(){
 
 
     }else  if(darkMode=="Light"){
-        //enable Light
-        body.className="hive"
-        DKMDBtn.textContent="dark_mode" ;
+   
 
-        DKMDBtn.classList.add('HIVE')
+        DKMDBtn.textContent="dark_mode";
+
         localStorage.setItem("darkMode","Light");
 
     }
