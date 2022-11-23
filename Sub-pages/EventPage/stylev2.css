@@ -1,0 +1,48 @@
+@import url(/style.scss);
+:root {
+  --radius:1rem ;
+}
+
+nav {
+  background: var(--base);
+  box-shadow: 0rem -10px 20px 10px rgba(0, 0, 0, 0.242);
+}
+
+#EventPageMain {
+  position: absolute;
+  top: 5rem;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+}
+
+p {
+  width: 95%;
+  min-height: 100vh;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.highlight {
+  text-shadow: 0 0 0.3em var(--accent);
+}
+
+h1 {
+  width: 95%;
+  font-size: 4em;
+  font-weight: 800;
+  line-height: 0.8em;
+}
+h1 .Subname {
+  color: var(--accent);
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+img {
+  width: 95%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

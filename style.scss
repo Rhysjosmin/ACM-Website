@@ -12,10 +12,11 @@
 }
 :root{
     --borderBg:linear-gradient(to right,  rgb(14, 193, 252), rgba(255, 108, 172, 0.95));
-    --background:radial-gradient(circle,rgba(108, 183, 230, 0.781),rgb(255, 202, 225));
+    --background:radial-gradient(circle,rgba(108, 183, 230, 0.62),rgba(239, 202, 255, 0.324));
     --radius:.5rem;
     --base:rgb(255, 255, 255);
     --secondary:gray;
+    --text:rgb(0, 0, 0);
     --tertiary:#111111;
     --accent:rgb(16, 106, 249);
 
@@ -25,15 +26,17 @@
     
 }
 .dark{
+    --text:rgb(255, 255, 255);
     --borderBg:linear-gradient(to right,  rgba(230, 2, 143, 0.623), rgba(20, 5, 101, 0.832));
 
     --background:radial-gradient(circle at top,rgb(41, 0, 7),#040404);
-    --background:#020202;
+    --background:#080808;
     --base:#040404;
     --secondary:rgb(70, 70, 70);
     --tertiary:#ffffff;
-    --accent:rgb(255, 1, 98);
-
+    --accent:rgb(255, 72, 142);
+    --accentText:rgb(255, 0, 98);
+    
     --heading:white;
     --next:rgb(16, 106, 249);
 
@@ -78,7 +81,8 @@ align-items: center;
 justify-content: flex-end;
 
 
-h1{
+a{
+    text-decoration: none;
     font-family: 'Museomoderno';
 
     margin-right: auto;
@@ -410,6 +414,7 @@ display: grid;
 }
 
 #aboutContainer{
+  
     pointer-events: none;
   z-index: 10;
  position: fixed;

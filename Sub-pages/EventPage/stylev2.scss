@@ -1,0 +1,78 @@
+@import url(/style.scss);
+:root{
+    --radius:1rem
+}
+nav{
+     background: var(--base);
+     box-shadow: 0rem -10px 20px 10px rgba(0, 0, 0, 0.242);
+}
+
+#EventPageMain{
+    position: absolute;
+    top: 5rem;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+}
+
+    p{
+width: 95%;
+min-height: 100vh;
+        font-size: 2em ;
+        font-weight: 400;
+        
+    }
+
+.highlight{
+
+        text-shadow: 0 0 .3em var(--accent);
+
+    
+}
+h1{
+
+width: 95%;
+        font-size: 4em ;
+        font-weight: 800;
+        line-height: .8em;
+        .Subname{
+            color: var(--accent);
+            font-size: .8em ;
+        font-weight: 500;
+        }
+
+    }
+
+  
+
+
+ 
+
+    img{
+      
+      width:95%;
+       height: 70vh;
+   
+        object-fit: cover;
+    }
+
+
+
+
+
+
+// <section id="EventPage-main">
+// <section id="Text">
+//     <h1>DBCE ACM Student Chapter  Organizes Poster Making Competition</h1>
+//     <p>Don Bosco College of Engineering under  DBCE ACM student chapter  organized Poster Making Competition for students of Government High School, Balli Goa under senior(Standard VIII-X) and junior category (Standard V-VII) on 24th September 2022. The topic for poster competition was “Technologies for rural livelihood”. Ms.Alpa Dessai, the headmistress  of Government High School, Balli, welcomed the ACM team: Dr. Gaurang Patkar, Prof. Sweta Morajkar & DBCE ACM student members Mr. Pratham Shah and Ms. Gauravi Kamat & appreciated them for taking this initiative that will make students work & bring the best out of them. The event received a good response with the active participation of students. Students were creative enough to highlight the technologies for rural livelihood. After putting in a lot of efforts, students were appreciated and felicitated for the beautiful posters made with the prizes under each category.
+//     </p>
+//         </section>
+
+//         <section id="Images">
+    //         <img src="../../media/Img/Events/Bali1.jpg" alt="">
+//         <img src="../../media/Img/Events/Bali1.jpg" alt="">
+//         <img src="../../media/Img/Events/Bali1.jpg" alt="">
+//         </section>
+
+// </section>

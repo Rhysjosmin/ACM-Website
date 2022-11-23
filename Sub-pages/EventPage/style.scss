@@ -1,0 +1,74 @@
+@import url(/style.scss);
+#EventPage-main{
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+top: 2rem;
+display: flex;
+align-items: center;
+justify-content: center;
+
+height: 100vh;
+gap: 1vw;
+#Text{
+    h1{
+
+        font-size: 2em ;
+        font-weight: 1000;
+        line-height: 1em;
+    }
+    p{
+        height: 100%;
+overflow: scroll;
+        font-size: 1.5em ;
+        font-weight: 400;
+        line-height: 1em;
+    }
+
+ border-radius: var(--radius);
+ height: 90vh;
+padding: 1vh;
+    width: 50vw;
+}
+#Images{
+    width: 45vw;
+    gap: 1vw;
+    display: grid;
+    grid-template-areas: 'a a'
+                        'b c';
+    img{
+        border-radius: var(--radius);
+        width: 100%;
+        height: 45vh ;
+        object-fit: cover;
+    }
+   
+    :nth-child(1){
+grid-area: a;
+    }
+    :nth-child(2){
+        grid-area: b;
+            }
+            :nth-child(3){
+                grid-area: c;
+                    }
+ 
+}
+
+}
+
+
+// <section id="EventPage-main">
+// <section id="Text">
+//     <h1>DBCE ACM Student Chapter  Organizes Poster Making Competition</h1>
+//     <p>Don Bosco College of Engineering under  DBCE ACM student chapter  organized Poster Making Competition for students of Government High School, Balli Goa under senior(Standard VIII-X) and junior category (Standard V-VII) on 24th September 2022. The topic for poster competition was “Technologies for rural livelihood”. Ms.Alpa Dessai, the headmistress  of Government High School, Balli, welcomed the ACM team: Dr. Gaurang Patkar, Prof. Sweta Morajkar & DBCE ACM student members Mr. Pratham Shah and Ms. Gauravi Kamat & appreciated them for taking this initiative that will make students work & bring the best out of them. The event received a good response with the active participation of students. Students were creative enough to highlight the technologies for rural livelihood. After putting in a lot of efforts, students were appreciated and felicitated for the beautiful posters made with the prizes under each category.
+//     </p>
+//         </section>
+
+//         <section id="Images">
+    //         <img src="../../media/Img/Events/Bali1.jpg" alt="">
+//         <img src="../../media/Img/Events/Bali1.jpg" alt="">
+//         <img src="../../media/Img/Events/Bali1.jpg" alt="">
+//         </section>
+
+// </section>
