@@ -4,9 +4,9 @@
 *{
     margin: 0%;
     padding: 0%;
-    // &::-webkit-scrollbar{
-    //     display: none;
-    // }
+    &::-webkit-scrollbar{
+        display: none;
+    }
     
     
 }
@@ -488,8 +488,8 @@ transition:  300ms;
 }
 
 #EventReports{
-    scroll-padding-block-start: 4rem;
- 
+
+ padding: 4rem;
     overflow-y: hidden;
     white-space: nowrap;
     overflow-x: auto;
@@ -522,6 +522,8 @@ margin-bottom: 13rem;
     }
 }
 .event{
+    translate: 82rem;
+    padding-right: 2rem;
     user-select: none;
 //    animation: scroll 30s linear 10ms infinite alternate-reverse;
     border-radius: var(--radius);

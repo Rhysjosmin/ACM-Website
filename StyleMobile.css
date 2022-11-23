@@ -62,7 +62,8 @@
     align-items: center;
     justify-content: left;
     gap: 1rem;
-    font-size: 3.5em;
+    font-size: 10vw;
+    white-space: nowrap;
   }
   #announcement #Timing {
     position: relative;
