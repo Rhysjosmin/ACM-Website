@@ -521,6 +521,18 @@ margin-bottom: 13rem;
         translate: -86rem;
     }
 }
+#EventContainer
+{
+display: flex;
+gap: 2rem;
+position: absolute;
+
+left: 0px;
+
+
+
+padding: 0 100px;
+}
 .event{
 
     user-select: none;

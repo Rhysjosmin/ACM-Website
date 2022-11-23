@@ -448,6 +448,14 @@ nav #NavLinks {
     translate: -86rem;
   }
 }
+#EventContainer {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  left: 0px;
+  padding: 0 100px;
+}
+
 .event {
   -webkit-user-select: none;
      -moz-user-select: none;
