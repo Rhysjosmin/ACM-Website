@@ -2,7 +2,7 @@
 @media (max-width: 500px) {
   nav {
     position: absolute;
-    background: #020202;
+    background: var(--base);
   }
   #imgControl {
     display: none !important;
