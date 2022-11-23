@@ -495,8 +495,8 @@ transition:  300ms;
     overflow-x: auto;
     height: 80vh;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: flex-start;
+
     perspective: 8000px;
     flex-wrap: nowrap;
     gap: 2rem;
@@ -522,8 +522,7 @@ margin-bottom: 13rem;
     }
 }
 .event{
-    translate: 55rem;
-    padding-right: 2rem;
+
     user-select: none;
 //    animation: scroll 30s linear 10ms infinite alternate-reverse;
     border-radius: var(--radius);

@@ -414,8 +414,7 @@ nav #NavLinks {
   overflow-x: auto;
   height: 80vh;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: flex-start;
   perspective: 8000px;
   flex-wrap: nowrap;
   gap: 2rem;
@@ -450,8 +449,6 @@ nav #NavLinks {
   }
 }
 .event {
-  translate: 55rem;
-  padding-right: 2rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
