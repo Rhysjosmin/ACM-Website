@@ -9,7 +9,7 @@ function changeImg(){
     //void img.offsetWidth;
     //img.classList.add('ani1');
     
-    img.src='./media/Img/Slideshow/Img_'+i.toString().concat(".JPG")
+    img.src='./media/Img/Slideshow/Img_'+i.toString().concat(".webp")
     i++;
 
  
@@ -19,7 +19,7 @@ function changeImg(){
 }
 
 function NextImg(){
-    img.src='./media/Img/Slideshow/Img_'+i.toString().concat(".JPG")
+    img.src='./media/Img/Slideshow/Img_'+i.toString().concat(".webp")
     i++;
 
  
@@ -30,7 +30,7 @@ function NextImg(){
 }
 
 function PrevImg(){
-    img.src='./media/Img/Slideshow/Img_'+i.toString().concat(".JPG")
+    img.src='./media/Img/Slideshow/Img_'+i.toString().concat(".webp")
     i--;
 
  
