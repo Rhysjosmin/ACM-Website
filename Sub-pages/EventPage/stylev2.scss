@@ -3,16 +3,18 @@
     --radius:1rem
 }
 nav{
+    position: absolute;
      background: var(--base);
-     box-shadow: 0rem -10px 20px 10px rgba(0, 0, 0, 0.242);
+     box-shadow: 0rem -10px 20px 10px rgba(0, 0, 0, 0.1);
 }
 
 #EventPageMain{
     position: absolute;
     top: 5rem;
-    width: 100vw;
+    width: 90vw;
     display: grid;
-    place-items: center;
+   left: 2rem;
+ 
     gap: 2rem;
 }
 
@@ -30,9 +32,9 @@ min-height: 100vh;
 
     
 }
-h1{
+    h1{
 
-width: 95%;
+        width: 95%;
         font-size: 4em ;
         font-weight: 800;
         line-height: .8em;
@@ -50,12 +52,13 @@ width: 95%;
  
 
     img{
-        box-shadow: .3rem .50rem 0 .1rem var(--accent), -.8rem -.20rem 0 .2rem var(--accent2);
-      
+
       width:85%;
        height: 70vh;
    
         object-fit: cover;
+        transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
     }
 
 

@@ -495,6 +495,7 @@ transition:  300ms;
 }
 
 #EventReports{
+    scroll-snap-type: x  mandatory;
 
  padding: 4rem;
     overflow-y: hidden;
@@ -540,10 +541,13 @@ left: 0px;
 
 padding: 0 100px;
 }
-.event{
 
-    user-select: none;
-//    animation: scroll 30s linear 10ms infinite alternate-reverse;
+.event{
+    scroll-snap-align: center;
+
+    //background: red;
+    height: 30rem;
+    user-select: none !important;
     border-radius: var(--radius);
     .cardBorder{
       height: 30rem;
@@ -620,7 +624,7 @@ text-decoration: none;
     }
     
     h1{
-        font-size: 1.2em;
+        font-size: 1em;
        background: var(--base);
        box-shadow: 0rem 0rem 1rem  1.3rem var(--base);
      
@@ -632,7 +636,7 @@ text-decoration: none;
         color: var(--tertiary);
         position: absolute;
         text-indent: 1rem;
-        z-index: 2;
+        z-index: 6;
         bottom: 0rem;
  
         

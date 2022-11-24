@@ -414,6 +414,8 @@ nav #NavLinks {
 }
 
 #EventReports {
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
   padding: 4rem;
   overflow-y: hidden;
   white-space: nowrap;
@@ -463,10 +465,12 @@ nav #NavLinks {
 }
 
 .event {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  scroll-snap-align: center;
+  height: 30rem;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
   border-radius: var(--radius);
   transition: 400ms ease;
   text-decoration: none;
@@ -516,7 +520,7 @@ nav #NavLinks {
   overflow: hidden;
 }
 .event h1 {
-  font-size: 1.2em;
+  font-size: 1em;
   background: var(--base);
   box-shadow: 0rem 0rem 1rem 1.3rem var(--base);
   border-radius: 0 0 var(--radius) var(--radius);
@@ -527,6 +531,6 @@ nav #NavLinks {
   color: var(--tertiary);
   position: absolute;
   text-indent: 1rem;
-  z-index: 2;
+  z-index: 6;
   bottom: 0rem;
 }
