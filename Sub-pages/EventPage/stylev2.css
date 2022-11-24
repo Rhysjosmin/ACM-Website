@@ -20,12 +20,12 @@ nav {
 p {
   width: 95%;
   min-height: 100vh;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 400;
 }
 
 .highlight {
-  text-shadow: 0 0 0.3em var(--accent);
+  color: var(--accent);
 }
 
 h1 {
@@ -41,7 +41,8 @@ h1 .Subname {
 }
 
 img {
-  width: 95%;
+  box-shadow: 0.3rem 0.5rem 0 0.1rem var(--accent), -0.8rem -0.2rem 0 0.2rem var(--accent2);
+  width: 85%;
   height: 70vh;
   -o-object-fit: cover;
      object-fit: cover;

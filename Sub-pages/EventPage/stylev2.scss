@@ -19,14 +19,14 @@ nav{
     p{
 width: 95%;
 min-height: 100vh;
-        font-size: 2em ;
+        font-size: 1em ;
         font-weight: 400;
         
     }
 
 .highlight{
 
-        text-shadow: 0 0 .3em var(--accent);
+        color: var(--accent);
 
     
 }
@@ -50,8 +50,9 @@ width: 95%;
  
 
     img{
+        box-shadow: .3rem .50rem 0 .1rem var(--accent), -.8rem -.20rem 0 .2rem var(--accent2);
       
-      width:95%;
+      width:85%;
        height: 70vh;
    
         object-fit: cover;
