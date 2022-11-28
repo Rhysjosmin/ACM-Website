@@ -12,6 +12,7 @@
     <title>ACM</title>
 </head>
 <body id="body">
+    <div id="BgGraph"></div>
 
     <section class="preload">
         <div class="lds-ripple"><div></div><div></div></div>
@@ -34,7 +35,6 @@
     
     <div id="NavLinks">
           <span class="material-symbols-outlined rotate" onclick="darkmode()" id="Darkmode_button">dark_mode</span>
-    <span class="material-symbols-outlined " onclick="ABOUT()">question_mark</span>  
     </div>
 
     </nav>
@@ -74,7 +74,7 @@
   
 <section id="EventReports">
 
-    <a href="" class="event">
+    <div onclick="LinkHREF()" class="event">
         <div class="cardBorder" >
             <div class="textShadow">
              <h1>ACM Inaugural Ceremony</h1> 
@@ -84,10 +84,10 @@
             <img src="./media/Img/Slideshow/Img_1.webp" alt="">   
         </div>
        
-    </a>
+    </div>
 
 
-    <a href="./Sub-pages/EventPage/PosterMaking V2.html" class="event">
+    <div  onclick="LinkHREF('./Sub-pages/EventPage/PosterMaking V2.html')"  class="event">
         <div class="cardBorder" >
             <div class="textShadow">
              <h1>Poster Making Competition</h1> 
@@ -97,10 +97,10 @@
             <img src="./media/Img/Events/Bali1.jpg" alt="">   
         </div>
        
-    </a>
+    </div>
 
 
-    <a href="./Sub-pages/EventPage/PosterMaking V2.html" class="event">
+    <div onclick="LinkHREF('./Sub-pages/EventPage/PosterMaking V2.html')" class="event">
         <div class="cardBorder" >
             <div class="textShadow">
              <h1>Panel Discussion on Career Insights</h1> 
@@ -110,7 +110,19 @@
             <img src="./media/Img/Events/Talk On Career.jpeg" alt="">   
         </div>
        
-    </a>
+    </div>
+
+    <div onclick="LinkHREF('./Sub-pages/EventPage/PosterMaking V2.html')" class="event">
+        <div class="cardBorder" >
+            <div class="textShadow">
+             <h1>Bee Farm Visit</h1> 
+            
+            
+            </div>
+            <img src="./media/Img/Events/Bee Visit/IMG-20221126-WA0021.jpg" alt="">   
+        </div>
+       
+    </div>
 
 
  
@@ -195,18 +207,15 @@
 
 </section>
 
-<section id="aboutContainer" class="invisible " >
-    <div class="cardBorder" >
-    <div id="about" class="card">
-      <h1>ABOUT</h1>
-    <p>We see a world where computing helps solve tomorrow's problems - where we use our knowledge and skills to advance the profession and make a positive impact.</p>  
-    </div>
-    </div>
-<div id="AboutBG" onclick="ABOUT()"></div>
-</section>
+
 
 <section id="footer"></section>
 <!-- Google tag (gtag.js) -->
+<script>
+    function LinkHREF(link){
+        window.location.href = link
+    }
+</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NFV4F6BTR"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -219,6 +228,6 @@
 <script src="./Scripts/preload.js"></script>
 <script src="./Scripts/darkmode.js"></script>
 <script src="./Scripts/Changeimg.js"></script>
-<script src="./Scripts/AboutExpand.js"></script>
+
 
 </html>

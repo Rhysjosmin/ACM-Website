@@ -355,37 +355,6 @@ nav #NavLinks {
   background: var(--accent);
 }
 
-#aboutContainer {
-  pointer-events: none;
-  z-index: 10;
-  position: fixed;
-  top: 0%;
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  place-items: center;
-}
-#aboutContainer .cardBorder {
-  display: flex;
-  justify-content: center;
-  width: 75%;
-}
-
-#about {
-  pointer-events: all;
-  min-height: 32rem;
-  text-align: center;
-  display: grid;
-  grid-template-rows: 4rem 9rem;
-  transition: 700ms;
-}
-#about h1 {
-  font-size: min(5vw, 3em);
-}
-#about p {
-  font-size: min(3vw, 1.3em);
-}
-
 .visible {
   top: 0rem !important;
 }
@@ -402,15 +371,6 @@ nav #NavLinks {
 }
 .invisible img {
   border-radius: 0% !important;
-}
-
-#AboutBG {
-  background: rgba(0, 0, 0, 0);
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  transition: 300ms;
-  z-index: -2;
 }
 
 #EventReports {
@@ -533,4 +493,12 @@ nav #NavLinks {
   text-indent: 1rem;
   z-index: 6;
   bottom: 0rem;
+}
+
+#BgGraph {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-size: 2rem 2rem;
+  background-image: linear-gradient(to right, rgba(128, 128, 128, 0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(128, 128, 128, 0.02) 1px, transparent 1px);
 }

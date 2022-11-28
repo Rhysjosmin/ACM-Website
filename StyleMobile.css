@@ -40,9 +40,8 @@
     scroll-snap-align: center;
     border: none;
     border-top: rgb(255, 255, 255) solid 2px;
-    -o-border-image: linear-gradient(to left, rgba(149, 0, 255, 0.275), rgba(255, 0, 89, 0.334)) 30;
-       border-image: linear-gradient(to left, rgba(149, 0, 255, 0.275), rgba(255, 0, 89, 0.334)) 30;
-    box-shadow: 0rem 0.5rem 0.8rem -0.1rem rgba(81, 81, 81, 0.15);
+    -o-border-image: linear-gradient(to left, rgba(149, 0, 255, 0.275), rgba(255, 0, 89, 0.334)) 20;
+       border-image: linear-gradient(to left, rgba(149, 0, 255, 0.275), rgba(255, 0, 89, 0.334)) 20;
   }
   #EventReports {
     gap: 1rem !important;
@@ -120,30 +119,5 @@
   }
   #Buttons a {
     border: 1px solid rgba(140, 140, 140, 0.473) !important;
-  }
-  #AboutBG {
-    display: block;
-    opacity: 100;
-    background: red;
-  }
-  #aboutContainer {
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #aboutContainer #about {
-    min-height: 20rem;
-    display: flex;
-    flex-direction: column;
-    grid-template-rows: 5em 9em;
-  }
-  #aboutContainer p {
-    font-weight: 600;
-    width: 94vw;
-    font-size: 1.7em;
-  }
-  #aboutContainer h1 {
-    font-size: 4em;
   }
 }
