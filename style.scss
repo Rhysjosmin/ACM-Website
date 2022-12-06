@@ -19,7 +19,7 @@
     --text:rgb(0, 0, 0);
     --tertiary:#111111;
     --accent:rgb(16, 106, 249);
-    --accent2:rgb(16, 202, 249);
+    --accent2:rgb(16, 249, 171);
 
     --heading:white;
     --next:rgb(21, 21, 178);
@@ -65,7 +65,6 @@ body{
     font-family: 'Titillium Web', sans-serif;
 }
 nav{
- 
 span{
     transition: color .4s;
     &:hover{

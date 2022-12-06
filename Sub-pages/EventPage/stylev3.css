@@ -1,0 +1,71 @@
+@import url(/style.scss);
+:root {
+  --radius:1rem ;
+}
+
+nav {
+  position: absolute;
+  z-index: 3;
+  background: var(--base);
+  box-shadow: 0rem -10px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+#BlogHero {
+  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+  height: 30rem;
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+}
+
+#imgGrad {
+  background: linear-gradient(to right top, var(--accent), var(--accent2));
+  opacity: 0.5;
+  width: 100vw;
+  height: 30rem;
+  position: absolute;
+  z-index: 1;
+}
+
+h1 {
+  position: absolute;
+  z-index: 2;
+  bottom: 0.1em;
+  width: 98%;
+  font-size: 4em;
+  font-weight: 800;
+  line-height: 0.8em;
+}
+h1 .Subname {
+  color: var(--base);
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  filter: blur(5px);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#BlogMain {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+  position: absolute;
+  top: 30.3rem;
+}
+#BlogMain p {
+  padding: 1rem;
+}

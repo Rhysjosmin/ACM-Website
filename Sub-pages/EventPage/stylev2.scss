@@ -11,10 +11,10 @@ nav{
 #EventPageMain{
     position: absolute;
     top: 5rem;
-    width: 90vw;
+    width: 100vw;
     display: grid;
-   left: 2rem;
- 
+
+    place-items: center;
     gap: 2rem;
 }
 
@@ -52,8 +52,8 @@ min-height: 100vh;
  
 
     img{
-
-      width:85%;
+align-self: flex-start;
+      width:95%;
        height: 70vh;
    
         object-fit: cover;

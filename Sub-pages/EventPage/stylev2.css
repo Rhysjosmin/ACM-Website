@@ -12,9 +12,9 @@ nav {
 #EventPageMain {
   position: absolute;
   top: 5rem;
-  width: 90vw;
+  width: 100vw;
   display: grid;
-  left: 2rem;
+  place-items: center;
   gap: 2rem;
 }
 
@@ -42,7 +42,8 @@ h1 .Subname {
 }
 
 img {
-  width: 85%;
+  align-self: flex-start;
+  width: 95%;
   height: 70vh;
   -o-object-fit: cover;
      object-fit: cover;
