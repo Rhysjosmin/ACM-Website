@@ -120,4 +120,43 @@
   #Buttons a {
     border: 1px solid rgba(140, 140, 140, 0.473) !important;
   }
+  #footer {
+    font-family: "Museomoderno";
+    height: 80vh;
+    font-weight: 300;
+    box-shadow: 0rem 0rem 10rem 5rem rgba(0, 0, 0, 0.147);
+  }
+  #footer a {
+    text-decoration: none;
+    color: var(--accent);
+    transition: color 0.3s;
+  }
+  #footer a:hover {
+    color: var(--accent2);
+  }
+  #footer h1, #footer h3 {
+    font-weight: 1000;
+  }
+  #footer h1 {
+    padding-left: 1rem;
+    font-size: 2em;
+  }
+  #footer li {
+    text-indent: 0.3rem;
+    list-style: none;
+  }
+  #footer #FooterListITEMS {
+    height: 90%;
+    padding-left: 1rem;
+    display: grid;
+    grid-template-areas: "a a a" "b b b";
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 1.5fr 3fr;
+  }
+  #footer iframe {
+    filter: invert(1);
+    grid-area: b;
+    height: 96%;
+    width: 95%;
+  }
 }

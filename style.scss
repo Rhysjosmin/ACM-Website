@@ -11,26 +11,12 @@
     
 }
 :root{
-    --borderBg:linear-gradient(to right,  rgb(14, 193, 252), rgba(255, 108, 172, 0.95));
-    --background:radial-gradient(circle,rgba(108, 183, 230, 0.62),rgba(239, 202, 255, 0.324));
-    --radius:.5rem;
-    --base:rgb(255, 255, 255);
-    --secondary:gray;
-    --text:rgb(0, 0, 0);
-    --tertiary:#111111;
-    --accent:rgb(16, 106, 249);
-    --accent2:rgb(16, 249, 171);
-
-    --heading:white;
-    --next:rgb(21, 21, 178);
-
+   
     
-}
-.dark{
     --text:rgb(255, 255, 255);
     --borderBg:linear-gradient(to right,  rgba(230, 2, 143, 0.623), rgba(20, 5, 101, 0.832));
 
-    --background:radial-gradient(circle at top,rgb(41, 0, 7),#040404);
+    // --background:radial-gradient(circle at top,rgb(41, 0, 7),#040404);
     --background:#080808;
     --base:#040404;
     --secondary:rgb(70, 70, 70);
@@ -41,6 +27,25 @@
     
     --heading:white;
     --next:rgb(16, 106, 249);
+    
+}
+.light{
+
+
+    --borderBg:linear-gradient(to right,  rgb(14, 193, 252), rgba(255, 108, 172, 0.95));
+    --background:radial-gradient(circle,rgba(108, 183, 230, 0.62),rgba(239, 202, 255, 0.324));
+    // --background:rgba(24, 17, 2, 0.62);
+    --base:rgb(255, 255, 255);
+    --secondary:gray;
+    --text:rgb(0, 0, 0);
+    --tertiary:#111111;
+    --accent:rgb(16, 106, 249);
+    --accent2:rgb(16, 249, 171);
+
+    --heading:white;
+    --next:rgb(21, 21, 178);
+
+
 
   
 }
@@ -595,6 +600,7 @@ text-decoration: none;
 }
 
 #BgGraph{
+    pointer-events: none;
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -607,4 +613,50 @@ text-decoration: none;
   
         
       
+}
+
+#footer{
+    font-family: 'Museomoderno';
+
+    height: 80vh;
+    font-weight: 300;
+    // background: #040404;
+    box-shadow: 0rem 0rem 10rem 5rem rgba(0, 0, 0, 0.147);
+a{
+    text-decoration: none;
+    color: var(--accent);
+    transition: color .3s;
+    &:hover{
+        color: var(--accent2);
+    }
+}
+
+    h1,h3{
+  
+        font-weight: 1000;
+
+    }
+    h1{
+        padding-left: 1rem; 
+        font-size: 2em;
+    }
+    li{
+        text-indent: .3rem;
+        list-style: none;
+    }
+   
+    #FooterListITEMS{
+        // background: red;
+        height: 90%;
+        padding-left: 1rem;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 40% .1fr;
+        grid-template-rows: 5fr .1fr;
+    }
+    iframe{
+        filter: invert(1);
+
+        height: 100%;
+        width: 100%;
+    }
 }

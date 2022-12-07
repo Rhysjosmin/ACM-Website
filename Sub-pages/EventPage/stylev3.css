@@ -12,9 +12,8 @@ nav {
 
 #BlogHero {
   overflow: hidden;
-  position: absolute;
   width: 100vw;
-  height: 30rem;
+  height: 100vh;
   display: grid;
   place-items: center;
   gap: 2rem;
@@ -24,7 +23,7 @@ nav {
   background: linear-gradient(to right top, var(--accent), var(--accent2));
   opacity: 0.5;
   width: 100vw;
-  height: 30rem;
+  height: 100%;
   position: absolute;
   z-index: 1;
 }
@@ -49,21 +48,22 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  filter: blur(5px);
-  position: absolute;
+  scale: 1;
   top: 0;
   width: 100%;
-  height: 30rem;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 #BlogMain {
+  line-height: 1.5em;
+  font-size: 1.1em;
   width: 100vw;
+  height: 100vh;
   display: grid;
   grid-template-columns: 6fr 2fr;
-  position: absolute;
   top: 30.3rem;
 }
 #BlogMain p {
