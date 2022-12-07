@@ -162,32 +162,20 @@ line-height: 1.8rem;
 
 
 #footer{
-    font-family: 'Museomoderno';
+
 
     height: 80vh;
-    font-weight: 300;
+
     // background: #040404;
     box-shadow: 0rem 0rem 10rem 5rem rgba(0, 0, 0, 0.147);
-a{
-    text-decoration: none;
-    color: var(--accent);
-    transition: color .3s;
-    &:hover{
-        color: var(--accent2);
-    }
-}
 
-    h1,h3{
-  
-        font-weight: 1000;
 
-    }
     h1{
         padding-left: 1rem; 
         font-size: 2em;
     }
     li{
-        text-indent: .3rem;
+        text-indent: 0rem;
         list-style: none;
     }
    
@@ -198,11 +186,11 @@ a{
         display: grid;
         grid-template-areas: "a a a"
                                 "b b b";
-        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
         grid-template-rows: 1.5fr 3fr;
     }
     iframe{
-        filter: invert(1);
+   
         grid-area: b;
         height: 96%;
         width: 95%;

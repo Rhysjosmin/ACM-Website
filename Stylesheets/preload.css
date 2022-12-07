@@ -1,26 +1,4 @@
-:root {
-  --borderBg:linear-gradient(to right, rgb(2, 107, 255), rgba(251, 251, 251, 0));
-  --background:radial-gradient(circle,rgba(108, 183, 230, 0.781),rgb(250, 233, 217));
-  --radius:.5rem;
-  --base:rgb(255, 255, 255);
-  --secondary:gray;
-  --tertiary:#111111;
-  --accent:rgb(16, 106, 249);
-  --heading:white;
-  --next:rgb(21, 21, 178);
-}
-
-.dark {
-  --borderBg:linear-gradient(to right, rgba(230, 2, 143, 0.623), rgba(20, 5, 101, 0.832));
-  --background:radial-gradient(circle,rgb(41, 0, 7),#040404);
-  --base:#040404;
-  --secondary:rgb(70, 70, 70);
-  --tertiary:#ffffff;
-  --accent:rgb(255, 1, 98);
-  --heading:white;
-  --next:rgb(16, 106, 249);
-}
-
+@import url(/style.scss);
 .preload {
   height: 100vh;
   width: 100vw;

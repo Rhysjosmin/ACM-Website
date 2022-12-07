@@ -11,7 +11,7 @@
     
 }
 :root{
-   
+    --radius:.5rem;
     
     --text:rgb(255, 255, 255);
     --borderBg:linear-gradient(to right,  rgba(230, 2, 143, 0.623), rgba(20, 5, 101, 0.832));
@@ -27,6 +27,9 @@
     
     --heading:white;
     --next:rgb(16, 106, 249);
+
+    --Register:var(--accent);
+    --ReadMore:rgb(77, 250, 184);
     
 }
 .light{
@@ -46,6 +49,8 @@
     --next:rgb(21, 21, 178);
 
 
+    --Register:var(--accent);
+    --ReadMore:rgb(251, 106, 176);
 
   
 }
@@ -186,10 +191,14 @@ position: relative;
 #back:hover{
 
 translate: -1rem;
+color: var(--base);
+background: var(--accent);
 
 }
 #forward:hover{
     translate: 1rem;
+    color: var(--base);
+background: var(--accent);
 
   
 }
@@ -204,7 +213,7 @@ img{
     height: 80%;
     object-fit: cover;
 
-    border-radius: .5rem;
+    border-radius: var(--radius);
 }
 }
 
@@ -409,12 +418,17 @@ display: grid;
           color: var(--tertiary);
           transition: background-color .4s;
          
-            &:hover{
-                background: var(--accent);
-              }
-          
+       
       
          
+        }
+        .RegisterButton:hover{
+            background: var(--Register);
+
+        }
+        .ReadMoreButton:hover{
+            background: var(--ReadMore);
+
         }
     }
 }
@@ -616,7 +630,9 @@ text-decoration: none;
 }
 
 #footer{
-    font-family: 'Museomoderno';
+    background: var(--base);
+    font-family: 'Titillium Web', sans-serif;
+
 
     height: 80vh;
     font-weight: 300;
@@ -632,16 +648,17 @@ a{
 }
 
     h1,h3{
-  
+  font-family: 'Museomoderno';
         font-weight: 1000;
 
     }
     h1{
+        height: 1.5em;
         padding-left: 1rem; 
         font-size: 2em;
     }
     li{
-        text-indent: .3rem;
+        // text-indent: .3rem;
         list-style: none;
     }
    
@@ -654,7 +671,7 @@ a{
         grid-template-rows: 5fr .1fr;
     }
     iframe{
-        filter: invert(1);
+        // filter: invert(1);
 
         height: 100%;
         width: 100%;
