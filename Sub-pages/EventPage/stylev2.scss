@@ -18,13 +18,14 @@ nav{
 
     gap: 1rem;
 
-       #bodyText{
-        margin-left: var(--marginLeft);
 
-        min-height: 100vh;
-        font-size: 1em ;
-        font-weight: 400;
-        width: 60vw;
+       #bodyText{
+            margin-left: var(--marginLeft);
+
+            min-height: 100vh;
+            font-size: 1em ;
+            font-weight: 400;
+            width: 60vw;
     }
 
 .highlight{
@@ -41,6 +42,7 @@ nav{
         font-size: 4em ;
         font-weight: 800;
         line-height: .8em;
+
         .Subname{
             color: var(--accent);
             font-size: .8em ;
@@ -60,6 +62,8 @@ nav{
   
     }
     img{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
         align-self: flex-start;
         width:95%;
      height: 70vh;
@@ -99,7 +103,7 @@ nav{
         flex-direction: column;
         background: var(--base);
         border-radius: var(--radius);
-        transition: height .2s;
+        transition: background-color .5s;
         p{  
             font-size: 1.2em;
             display: none;
@@ -110,6 +114,9 @@ nav{
         a{
             text-decoration: none;
             color: var(--accent2);
+        }
+        &:hover{
+            background:var(--accent2);
         }
 
     }
@@ -122,12 +129,22 @@ nav{
                 display: block;
                 opacity: 1;
             }
-        
+            &:hover{
+                background: var(--base);
+            }
     }
 }
 
 
-
+@media (max-width:500px) {
+    
+    #feed{
+        display: none !important;
+    }
+    #bodyText{
+        width: 100vw !important;
+    }
+}
   
 
 
