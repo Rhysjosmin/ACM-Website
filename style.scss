@@ -211,9 +211,9 @@ img{
 
     width: 95%;
     height: 80%;
-    object-fit: cover;
+    object-fit:contain;
 
-    border-radius: var(--radius);
+    // border-radius: var(--radius);
 }
 }
 
@@ -630,6 +630,7 @@ text-decoration: none;
 }
 
 #footer{
+    position: relative;
     background: var(--base);
     font-family: 'Titillium Web', sans-serif;
 
@@ -667,7 +668,7 @@ a{
         height: 90%;
         padding-left: 1rem;
         display: grid;
-        grid-template-columns: 1.5fr 1fr 1fr 40% .1fr;
+        grid-template-columns: 1fr 1fr 1fr 40% .1fr;
         grid-template-rows: 5fr .1fr;
     }
     iframe{
@@ -676,4 +677,64 @@ a{
         height: 100%;
         width: 100%;
     }
+}
+
+#CoreCommittee{
+    min-height: 100vh;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+   flex-wrap: wrap;
+
+   
+   .Person{
+    position: relative;
+    border-radius: var(--radius);
+    overflow: hidden;
+    width: 15rem;
+    height: 24rem;
+    display: block;
+    // text-align: center;
+  
+    background: var(--base);
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover{
+        scale: 1.04;
+        img{
+
+            scale: 1.05;
+        }
+    }
+   }
+   h4{
+    font-weight: 400;
+   
+
+   }
+   h2,h4{
+    text-indent: .5rem;
+   }
+   h4{
+    color: #828282;
+   }
+   img{
+
+
+    
+    width: inherit;
+    height: 19rem;
+    object-fit: cover;
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    
+   }
+   .PersonImageOverFlow{
+    overflow: hidden;
+        width: 15rem;
+        height: 19rem;
+        object-fit: cover;
+   }
 }

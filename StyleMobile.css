@@ -10,7 +10,9 @@
   #Hero img {
     margin-top: 5rem;
     width: 95%;
-    height: 100%;
+    height: 80%;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
   }
   .card {
     background-color: transparent;
@@ -23,10 +25,13 @@
   .cardBorder::before, .cardBorder::after {
     background: none;
   }
+  #info p {
+    font-size: 0.8em;
+  }
   #announcments {
     -ms-scroll-snap-type: x mandatory;
         scroll-snap-type: x mandatory;
-    margin-top: 5rem;
+    margin-top: 1rem;
     position: relative;
     padding-bottom: 20vh;
     width: 100vw;
@@ -137,12 +142,60 @@
     padding-left: 1rem;
     display: grid;
     grid-template-areas: "a a a" "b b b";
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1.5fr 3fr;
   }
   #footer iframe {
     grid-area: b;
     height: 96%;
     width: 95%;
+  }
+  #CoreCommittee {
+    min-height: 100vh;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #CoreCommittee .Person {
+    position: relative;
+    border-radius: 0;
+    width: 12rem;
+    height: 20rem;
+    display: block;
+    text-align: center;
+    background: var(--base);
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  #CoreCommittee .Person:hover {
+    scale: 1;
+  }
+  #CoreCommittee .Person:hover img {
+    scale: 1;
+  }
+  #CoreCommittee h4 {
+    font-weight: 400;
+    color: #828282;
+  }
+  #CoreCommittee h2, #CoreCommittee h4 {
+    text-indent: 0rem;
+  }
+  #CoreCommittee h2 {
+    font-size: 1.1em;
+  }
+  #CoreCommittee img {
+    width: inherit;
+    height: inherit;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  #CoreCommittee .PersonImageOverFlow {
+    overflow: hidden;
+    width: inherit;
+    height: 16.5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }

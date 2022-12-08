@@ -12,7 +12,9 @@
     #Hero img{
         margin-top: 5rem;
 width: 95%;
-height: 100%;
+height: 80%;
+
+object-position: 50% 50%;
     }
 
 
@@ -31,9 +33,14 @@ border-radius: 4px;
     background: none;
   }
 }
+#info{
+    p{
+        font-size: .8em;
+    }
+}
 #announcments{
     scroll-snap-type: x mandatory;
-    margin-top: 5rem;
+    margin-top: 1rem;
     position: relative;
    padding-bottom: 20vh;
 
@@ -186,7 +193,7 @@ line-height: 1.8rem;
         display: grid;
         grid-template-areas: "a a a"
                                 "b b b";
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1.5fr 3fr;
     }
     iframe{
@@ -195,6 +202,68 @@ line-height: 1.8rem;
         height: 96%;
         width: 95%;
     }
+}
+#CoreCommittee{
+    min-height: 100vh;
+    // padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+   flex-wrap: wrap;
+
+   
+   .Person{
+    position: relative;
+    border-radius: 0;
+    width: 12rem;
+    height: 20rem;
+    display: block;
+    text-align: center;
+  
+    background: var(--base);
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover{
+        scale: 1;
+        img{
+
+            scale: 1;
+        }
+    }
+   }
+   h4{
+  
+    font-weight: 400;
+ 
+        color: #828282;
+      
+
+   }
+   h2,h4{
+    text-indent: 0rem;
+   }
+   h2{
+    font-size: 1.1em;
+   }
+   
+   img{
+
+
+    
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    
+   }
+   .PersonImageOverFlow{
+    overflow: hidden;
+        width: inherit;
+        height: 16.5rem;
+        object-fit: cover;
+   }
 }
 
 }

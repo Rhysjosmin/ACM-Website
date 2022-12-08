@@ -177,9 +177,8 @@ nav #NavLinks {
   z-index: 1;
   width: 95%;
   height: 80%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: var(--radius);
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #info {
@@ -515,6 +514,7 @@ nav #NavLinks {
 }
 
 #footer {
+  position: relative;
   background: var(--base);
   font-family: "Titillium Web", sans-serif;
   height: 80vh;
@@ -545,10 +545,59 @@ nav #NavLinks {
   height: 90%;
   padding-left: 1rem;
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 40% 0.1fr;
+  grid-template-columns: 1fr 1fr 1fr 40% 0.1fr;
   grid-template-rows: 5fr 0.1fr;
 }
 #footer iframe {
   height: 100%;
   width: 100%;
+}
+
+#CoreCommittee {
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#CoreCommittee .Person {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  width: 15rem;
+  height: 24rem;
+  display: block;
+  background: var(--base);
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#CoreCommittee .Person:hover {
+  scale: 1.04;
+}
+#CoreCommittee .Person:hover img {
+  scale: 1.05;
+}
+#CoreCommittee h4 {
+  font-weight: 400;
+}
+#CoreCommittee h2, #CoreCommittee h4 {
+  text-indent: 0.5rem;
+}
+#CoreCommittee h4 {
+  color: #828282;
+}
+#CoreCommittee img {
+  width: inherit;
+  height: 19rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#CoreCommittee .PersonImageOverFlow {
+  overflow: hidden;
+  width: 15rem;
+  height: 19rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
