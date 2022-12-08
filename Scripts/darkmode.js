@@ -1,27 +1,28 @@
 const  DKMDBtn=document.getElementById('Darkmode_button');
 const body=document.querySelector('body')
 
-let darkMode=localStorage.getItem("darkMode");
 
+let darkMode=localStorage.getItem("darkMode");
 
 function darkmode(){
     DKMDBtn.classList.remove('rotate');
     void DKMDBtn.offsetWidth;
     DKMDBtn.classList.add('rotate');
     
-    if(DKMDBtn.textContent.includes("light_mode")){
-        body.classList.remove('light')
-        DKMDBtn.textContent="dark_mode" ;
+    if(DKMDBtn.textContent.includes("dark_mode")){
+        body.className='dark'
+        DKMDBtn.textContent="light_mode" ;
 
        
         localStorage.setItem("darkMode","Light");
         
         
-    }else if(DKMDBtn.textContent.includes("dark_mode")){
-        body.className="light"
-        DKMDBtn.textContent="light_mode" ;
+    }else if(DKMDBtn.textContent.includes("light_mode")){
 
-        localStorage.setItem("darkMode","Dark");
+        body.className="light"
+        DKMDBtn.textContent="dark_mode" ;
+
+        localStorage.setItem("light_mode","Dark");
 
 
     }
@@ -36,20 +37,24 @@ function darkmode(){
 //Prefered Color Scheme from Memory
 MemDkMD();
 
+darkmode()
+darkmode()
+darkmode()
+
 function MemDkMD(){
-    if(darkMode=="Dark"){
-        //enable Dark
-        body.className="dark"
-        DKMDBtn.textContent="light_mode" ;
-        localStorage.setItem("darkMode","Dark");
+    if(darkMode=="Light"){
+        //enable Light
+        body.className="Light"
+        DKMDBtn.textContent="dark_mode" ;
+        localStorage.setItem("darkMode","Light");
 
 
-    }else  if(darkMode=="Light"){
+    }else  if(darkMode=="Dark"){
    
 
-        DKMDBtn.textContent="dark_mode";
+        DKMDBtn.textContent="light_mode";
 
-        localStorage.setItem("darkMode","Light");
+        localStorage.setItem("darkMode","Dark");
 
     }
 }

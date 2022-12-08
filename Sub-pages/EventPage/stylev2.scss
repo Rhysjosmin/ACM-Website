@@ -1,6 +1,6 @@
 @import url(/style.scss);
 :root{
-    --radius:1rem
+    --marginLeft:1rem;
 }
 nav{
     position: absolute;
@@ -9,21 +9,22 @@ nav{
 }
 
 #EventPageMain{
-    position: absolute;
+    position: relative;
     top: 5rem;
     width: 100vw;
     display: grid;
 
-    place-items: center;
-    gap: 2rem;
-}
 
-    p{
-width: 95%;
-min-height: 100vh;
+
+    gap: 1rem;
+
+       #bodyText{
+        margin-left: var(--marginLeft);
+
+        min-height: 100vh;
         font-size: 1em ;
         font-weight: 400;
-        
+        width: 60vw;
     }
 
 .highlight{
@@ -33,6 +34,8 @@ min-height: 100vh;
     
 }
     h1{
+        
+        margin-left: var(--marginLeft);
 
         width: 95%;
         font-size: 4em ;
@@ -44,22 +47,92 @@ min-height: 100vh;
         font-weight: 500;
         }
 
-    }
+    } 
 
-  
-
-
- 
-
-    img{
-align-self: flex-start;
-      width:95%;
+    #MainImage{
+        margin-left: var(--marginLeft);
+        align-self: flex-start;
+          width:95%;
        height: 70vh;
    
         object-fit: cover;
         transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   
     }
+    img{
+        align-self: flex-start;
+        width:95%;
+     height: 70vh;
+ 
+      object-fit: cover;
+      transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    }
+
+    #mainContent{
+        font-size: 1.1em;
+        display: flex;
+        width: 100vw;
+      padding-bottom: 10rem;
+        // background: orangered;
+   
+    }
+    
+    #feed{
+ 
+
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        height: 100%;
+        width: 35vw;
+        // background: red;
+    }
+    .feedItem{
+        border: 1px solid rgba(194, 194, 194, 0.064);
+        cursor:default;
+        align-self: end;
+        padding: .8rem;
+        font-size: min(1.9vw,1.9vh);
+        width: 85%;
+        // height: 4em;
+        display: flex;
+        flex-direction: column;
+        background: var(--base);
+        border-radius: var(--radius);
+        transition: height .2s;
+        p{  
+            font-size: 1.2em;
+            display: none;
+            opacity: 0;
+            width: 100%;
+            transition:  .4s ;
+        }
+        a{
+            text-decoration: none;
+            color: var(--accent2);
+        }
+
+    }
+    .open{
+
+            p{
+                // height:16em 
+                width: 90%;
+                font-weight: 400;
+                display: block;
+                opacity: 1;
+            }
+        
+    }
+}
+
+
+
+  
+
+
+ 
+
 
 
 
