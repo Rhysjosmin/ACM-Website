@@ -108,6 +108,9 @@ nav {
 }
 
 @media (max-width: 500px) {
+  :root {
+    --marginLeft:.3rem;
+  }
   #feed {
     display: none !important;
   }
