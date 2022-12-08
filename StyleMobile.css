@@ -152,7 +152,7 @@
   #CoreCommittee {
     min-height: 100vw;
     display: flex;
-    gap: 2vw;
+    gap: 3vw;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -160,8 +160,8 @@
   #CoreCommittee .Person {
     position: relative;
     border-radius: 0;
-    width: 45vw;
-    height: 55vw;
+    width: 42vw;
+    height: 58vw;
     display: block;
     text-align: center;
     background: var(--base);
@@ -193,7 +193,7 @@
   #CoreCommittee .PersonImageOverFlow {
     overflow: hidden;
     width: inherit;
-    height: 45vw;
+    height: 40vw;
     -o-object-fit: cover;
        object-fit: cover;
   }

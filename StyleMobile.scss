@@ -208,7 +208,7 @@ line-height: 1.8rem;
     min-height: 100vw;
     // padding: 1rem;
     display: flex;
-    gap: 2vw;
+    gap: 3vw;
     align-items: center;
     justify-content: center;
    flex-wrap: wrap;
@@ -217,11 +217,11 @@ line-height: 1.8rem;
    .Person{
     position: relative;
     border-radius: 0;
-    width: 45vw;
-    height: 55vw;
+    width: 42vw;
+    height: 58vw;
     display: block;
     text-align: center;
-  
+    
     background: var(--base);
     transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
@@ -262,7 +262,7 @@ line-height: 1.8rem;
    .PersonImageOverFlow{
     overflow: hidden;
         width: inherit;
-        height: 45vw;
+        height: 40vw;
         object-fit: cover;
    }
 }
