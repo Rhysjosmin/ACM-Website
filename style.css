@@ -531,9 +531,10 @@ nav #NavLinks {
 }
 #footer h1, #footer h3 {
   font-family: "Museomoderno";
-  font-weight: 1000;
+  font-weight: 600;
 }
 #footer h1 {
+  font-weight: 1000;
   height: 1.5em;
   padding-left: 1rem;
   font-size: 2em;

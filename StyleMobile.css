@@ -8,11 +8,10 @@
     display: none !important;
   }
   #Hero img {
-    margin-top: 5rem;
     width: 95%;
-    height: 80%;
-    -o-object-position: 50% 50%;
-       object-position: 50% 50%;
+    height: 50%;
+    -o-object-position: 50% 10%;
+       object-position: 50% 10%;
   }
   .card {
     background-color: transparent;
@@ -151,9 +150,9 @@
     width: 95%;
   }
   #CoreCommittee {
-    min-height: 100vh;
+    min-height: 100vw;
     display: flex;
-    gap: 1rem;
+    gap: 2vw;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -161,8 +160,8 @@
   #CoreCommittee .Person {
     position: relative;
     border-radius: 0;
-    width: 12rem;
-    height: 20rem;
+    width: 45vw;
+    height: 55vw;
     display: block;
     text-align: center;
     background: var(--base);
@@ -194,7 +193,7 @@
   #CoreCommittee .PersonImageOverFlow {
     overflow: hidden;
     width: inherit;
-    height: 16.5rem;
+    height: 45vw;
     -o-object-fit: cover;
        object-fit: cover;
   }
