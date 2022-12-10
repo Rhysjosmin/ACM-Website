@@ -4,12 +4,13 @@ const img =document.getElementById('Heroimg');
 let i=2;
 const MAXIMG=9
 const MINIMG=2
+const ending =".jpg"
 function changeImg(){
     //img.classList.remove('ani1');
     //void img.offsetWidth;
     //img.classList.add('ani1');
     
-    img.src='./media/Img/Slideshow/Img_'+i.toString().concat(".webp")
+    img.src='./media/Img/Slideshow/Img_'+i.toString().concat(ending)
     i++;
 
  
@@ -19,7 +20,7 @@ function changeImg(){
 }
 
 function NextImg(){
-    img.src='./media/Img/Slideshow/Img_'+i.toString().concat(".webp")
+    img.src='./media/Img/Slideshow/Img_'+i.toString().concat(ending)
     i++;
 
  
@@ -30,7 +31,7 @@ function NextImg(){
 }
 
 function PrevImg(){
-    img.src='./media/Img/Slideshow/Img_'+i.toString().concat(".webp")
+    img.src='./media/Img/Slideshow/Img_'+i.toString().concat(ending)
     i--;
 
  
