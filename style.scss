@@ -190,13 +190,13 @@ position: relative;
 
 #back:hover{
 
-translate: -1rem;
+translate: -.5rem;
 color: var(--base);
 background: var(--accent);
 
 }
 #forward:hover{
-    translate: 1rem;
+    translate: .5rem;
     color: var(--base);
 background: var(--accent);
 

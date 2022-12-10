@@ -163,12 +163,12 @@ nav #NavLinks {
   z-index: 10;
 }
 #Hero #imgControl #back:hover {
-  translate: -1rem;
+  translate: -0.5rem;
   color: var(--base);
   background: var(--accent);
 }
 #Hero #imgControl #forward:hover {
-  translate: 1rem;
+  translate: 0.5rem;
   color: var(--base);
   background: var(--accent);
 }
