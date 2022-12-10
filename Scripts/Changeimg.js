@@ -4,7 +4,7 @@ const img =document.getElementById('Heroimg');
 let i=2;
 const MAXIMG=9
 const MINIMG=2
-const ending =".jpg"
+const ending =".webp"
 function changeImg(){
     //img.classList.remove('ani1');
     //void img.offsetWidth;
