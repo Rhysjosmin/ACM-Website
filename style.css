@@ -338,7 +338,7 @@ nav #NavLinks {
 #announcement {
   display: grid;
   grid-template-rows: 6em 3em 70%;
-  width: 45rem;
+  width: min(88vw, 45rem);
   aspect-ratio: 16/10;
   padding: 1.2rem;
 }

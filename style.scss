@@ -186,10 +186,10 @@ color: var(--base);
     position: absolute;
   
 z-index: 10;
-.cardBorder{
-display: grid;
-place-items: center;
-}
+    .cardBorder{
+    display: grid;
+    place-items: center;
+    }
 .controls{
 position: relative;
  display: flex;
@@ -396,7 +396,7 @@ display: grid;
   
 
 
-    width: 45rem;
+    width: min(88vw,45rem);
     aspect-ratio: 16/10;
 
     padding: 1.2rem;
