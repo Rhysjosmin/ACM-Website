@@ -54,7 +54,12 @@ Hero.onmousemove=e=>{
     const mouseDelta = parseFloat(Hero.dataset.mouseDownAt)-e.clientX,
         maxDelta=window.innerWidth/2;
 
-    const percentage =(mouseDelta/maxDelta)*100
+    const percentage =Math.abs(Math.round((mouseDelta/maxDelta)*(MAXIMG-MINIMG)))
+    if(MINIMG<percentage<(MAXIMG)){
+        i=percentage
+    }else{
+        i=MINIMG
+    }
     console.log(percentage)
     if(percentage>0) NextImg(); else PrevImg();
 }
