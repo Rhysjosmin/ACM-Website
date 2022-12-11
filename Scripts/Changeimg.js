@@ -1,5 +1,5 @@
 
-setInterval(()=>changeImg(),4500);
+// setInterval(()=>changeImg(),4500);
 const img =document.getElementById('Heroimg');
 let i=2;
 const MAXIMG=9
@@ -38,4 +38,46 @@ function PrevImg(){
     if(i<MINIMG){
         i=MAXIMG;
     }
+}
+
+//Hero
+
+const Hero=document.getElementById('Hero')
+
+Hero.onmousedown=e=>{
+    Hero.dataset.mouseDownAt=e.clientX;
+
+}
+
+Hero.onmousemove=e=>{
+    if(Hero.dataset.mouseDownAt==="0") return;
+    const mouseDelta = parseFloat(Hero.dataset.mouseDownAt)-e.clientX,
+        maxDelta=window.innerWidth/2;
+
+    const percentage =(mouseDelta/maxDelta)*100
+    console.log(percentage)
+    if(percentage>0) NextImg(); else PrevImg();
+}
+Hero.onmouseup=()=>{
+    Hero.dataset.mouseDownAt="0"
+}
+
+
+Hero.ontouchstart=e=>{
+    Hero.dataset.mouseDownAt=e.clientX;
+    // console.log(percentage)
+
+}
+
+Hero.ontouchmove=e=>{
+    if(Hero.dataset.mouseDownAt==="0") return;
+    const mouseDelta = parseFloat(Hero.dataset.mouseDownAt)-e.clientX,
+        maxDelta=window.innerWidth/2;
+
+    const percentage =(mouseDelta/maxDelta)*100
+    console.log(percentage)
+    if(percentage>0) NextImg(); else PrevImg();
+}
+Hero.ontouchend=()=>{
+    Hero.dataset.mouseDownAt="0"
 }
