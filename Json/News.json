@@ -1,0 +1,25 @@
+{
+    "Projects" : [
+        {
+            "Title":"ACM Inaugral Ceremony",
+            "Description":"The Department of Computer Engineering Don Bosco College of Engineering has registered for ACM Students Chapter named DBCE Goa ACM Student Chapter",
+            "Link":"/Sub-pages/EventPage/Inaugural.html"
+           
+        },
+        {
+            "Title":"Panel Discussion on Career Insights",
+            "Description":"C-codes student association along with ACM Goa students chapter of  computer engineering department, DBCE ,Fatorda  organized a Panel Discussion on career insights.",
+            "Link":"/Sub-pages/EventPage/CareerInsights.html"
+           
+        },
+        {
+            "Title":"⭐ DBCE ACM Visits Bee Farm....",
+            "Description":"ACM students chapter of DBCE visited Raika 🐝 Honey Apiary, Goa to understand the concept of \"Bees Algorithm\".",
+            "Link":""
+           
+        }
+
+       
+        
+    ]
+}

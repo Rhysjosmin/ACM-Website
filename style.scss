@@ -10,8 +10,19 @@
     
     
 }
+.highlight{
+
+    color: var(--accent);
+&::selection{
+    background: var(--text);
+    color:var(--base);
+}
+
+}
+
 ::selection{
     background: var(--accent3);
+ 
 }
 @font-face {
     font-family: 'Material Symbols Outlined';

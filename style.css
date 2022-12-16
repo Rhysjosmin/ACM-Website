@@ -9,6 +9,18 @@
   display: none;
 }
 
+.highlight {
+  color: var(--accent);
+}
+.highlight::-moz-selection {
+  background: var(--text);
+  color: var(--base);
+}
+.highlight::selection {
+  background: var(--text);
+  color: var(--base);
+}
+
 ::-moz-selection {
   background: var(--accent3);
 }

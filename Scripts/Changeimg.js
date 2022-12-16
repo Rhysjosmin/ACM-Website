@@ -68,32 +68,32 @@ const Hero=document.getElementById('Hero')
 // }
 
 
-img.ontouchstart=e=>{
-    Hero.dataset.mouseDownAt=e.changedTouches[0].clientX
-    console.log('Start',e.changedTouches[0].clientX)
+// img.ontouchstart=e=>{
+//     Hero.dataset.mouseDownAt=e.changedTouches[0].clientX
+//     console.log('Start',e.changedTouches[0].clientX)
 
-}
-
-// Hero.ontouchmove=e=>{
-//     // if(Hero.dataset.mouseDownAt==="0") return;
-//     // const mouseDelta = parseFloat(Hero.dataset.mouseDownAt)-e.clientX,
-//     //     maxDelta=window.innerWidth/2;
-
-//     // const percentage =(mouseDelta/maxDelta)*100
-//     // console.log(percentage)
-//     // if(percentage>0) NextImg(); else PrevImg();
 // }
-img.ontouchend=e=>{
-    console.log('END',e.changedTouches[0].clientX)
-    if(Hero.dataset.mouseDownAt==="0") return;
-    const mouseDelta = parseFloat(Hero.dataset.mouseDownAt)-e.changedTouches[0].clientX
-        maxDelta=window.innerWidth/2;
 
-    const percentage =(mouseDelta/maxDelta)
+// // Hero.ontouchmove=e=>{
+// //     // if(Hero.dataset.mouseDownAt==="0") return;
+// //     // const mouseDelta = parseFloat(Hero.dataset.mouseDownAt)-e.clientX,
+// //     //     maxDelta=window.innerWidth/2;
 
-    // console.log(percentage)
+// //     // const percentage =(mouseDelta/maxDelta)*100
+// //     // console.log(percentage)
+// //     // if(percentage>0) NextImg(); else PrevImg();
+// // }
+// img.ontouchend=e=>{
+//     console.log('END',e.changedTouches[0].clientX)
+//     if(Hero.dataset.mouseDownAt==="0") return;
+//     const mouseDelta = parseFloat(Hero.dataset.mouseDownAt)-e.changedTouches[0].clientX
+//         maxDelta=window.innerWidth/2;
 
-    if(percentage>0) NextImg(); else PrevImg();
-    Hero.dataset.mouseDownAt="0"
+//     const percentage =(mouseDelta/maxDelta)
+
+//     // console.log(percentage)
+
+//     if(percentage>0) NextImg(); else PrevImg();
+//     Hero.dataset.mouseDownAt="0"
     
-}
+// }
