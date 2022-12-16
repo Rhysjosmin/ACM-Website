@@ -4,7 +4,6 @@
 }
 
 nav {
-  position: absolute;
   background: var(--base);
   box-shadow: 0rem -10px 20px 10px rgba(0, 0, 0, 0.1);
 }
