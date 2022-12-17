@@ -24,9 +24,9 @@ function AddProject(project){
     for(var i=0;i<1000;i++)
  {
 
-    let Name=project.Projects[i].Title
-    let Description=project.Projects[i].Description
-    let Link=project.Projects[i].Link
+    let Name=project.News[i].Title
+    let Description=project.News[i].Description
+    let Link=project.News[i].Link
 
 
     
