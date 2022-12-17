@@ -15,12 +15,12 @@
 </head>
 <body id="body">
     <div id="BgGraph"></div>
-
+<!-- 
     <section class="preload">
         <div class="lds-ripple"><div></div><div></div></div>
         <h2 id="loadingDisp">DBCE ACM</h2>
         
-    </section> 
+    </section>  -->
    
 
     
@@ -125,72 +125,30 @@
 
 </section>
 
-<h1 class="SubTitle" id="UpcomingEvents">Upcoming Events</h1>
-<section id="announcments" >
+
+<template id="UpcommingEventTemplate">
+
     <div class="cardBorder" >
      <div id="announcement" class="card">
         <h1 id="Title">
-            <i>php Webinar<span class="presenter">Prof. Sweta Morajkar</span> </i>
-      
+            <i><span id="TITLE"></span><span class="presenter" id="PRESENTER"></span></i>
         </h1> 
-        <h3 id="Timing">13-5-22|8:30-12:30</h3>
+        <h3 id="Timing"></h3>
   
        
-        <p id="Description">A popular general-purpose scripting language that is especially suited to web development.
-            Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.<br><br>
-        The DBCE ACM chapter will be conducting a course in php covering most of the important ideas behind it
-    </p>
+        <p id="Description"></p>
         <div id="Buttons">
-            <a href="" class="RegisterButton">Register</a>
-            <a href="" class="ReadMoreButton">Read More..</a>
+            <a href="" class="RegisterButton" id="RegisterButton">Register</a>
+            <a href="" class="ReadMoreButton" id="ReadMoreButton">Read More</a>
         </div>
     </div>   
     </div>
+</template>
 
+<h1 class="SubTitle" id="UpcomingEvents">Upcoming Events</h1>
+<section id="announcments" >
 
-    <div class="cardBorder" >
-        <div id="announcement" class="card">
-           <h1 id="Title">
-               <i>Cyber Security<span class="presenter">Pratham Shah</span></i>
-               <!-- <div class="calendar">
-                   <span class="month">Jan</span>
-                   <span class="day">15</span>
-               </div> -->
-           </h1> 
-           <h3 id="Timing">13-5-22|8:30-12:30</h3>
-     
-          
-           <p id="Description">Cyber security is the practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks. It's also known as information technology security or electronic information security. The term applies in a variety of contexts, from business to mobile computing
-       </p>
-           <div id="Buttons">
-            <a href="" class="RegisterButton">Register</a>
-            <a href="" class="ReadMoreButton">Read More..</a>
-           </div>
-       </div>   
-       </div>
-
-    <div class="cardBorder" >
-        <div id="announcement" class="card">
-           <h1 id="Title">
-               <i>Flask Crash Course<span class="presenter">Rhys Josmin</span></i>
-               <!-- <div class="calendar">
-                   <span class="month">Jan</span>
-                   <span class="day">15</span>
-               </div> -->
-           </h1> 
-           <h3 id="Timing">13-5-22|8:30-12:30</h3>
-     
-          
-           <p id="Description">Flask is a web framework, it’s a Python module that lets you develop web applications easily. It’s has a small and easy-to-extend core: it’s a microframework that doesn’t include an ORM (Object Relational Manager) or such features.
-       </p>
-           <div id="Buttons">
-            <a href="" class="RegisterButton">Register</a>
-            <a href="" class="ReadMoreButton">Read More..</a>
-           </div>
-       </div>   
-       </div>
-
-
+ 
 </section>
 
 <h1 class="SubTitle" >Core Committee</h1>
@@ -242,10 +200,10 @@
         </ul>
 
         <ul>
-            <h3>Socials</h3>
-            <li><a href="">Twitter</a></li>
+            <!-- <h3>Socials</h3> -->
+            <!-- <li><a href="">Twitter</a></li>
             <li><a href="">Instagram</a></li>
-            <li><a href="">Github</a></li>
+            <li><a href="">Github</a></li> -->
         </ul>
         <ul>
             <h3>Contact</h3>
@@ -274,6 +232,7 @@
   <!-- <script src="./Scripts/EventGallery.js"></script> -->
 <script src="https://scriptsapi.netlify.app/Scripts/ACM/home.js"></script>
 <script src="./Scripts/preload.js"></script>
+<script src="./Scripts/JsonContent.js"></script>
 <script src="./Scripts/darkmode.js"></script>
 <script src="./Scripts/Changeimg.js"></script>
 
