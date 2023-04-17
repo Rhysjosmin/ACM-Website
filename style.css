@@ -101,7 +101,6 @@ body {
 nav {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   position: fixed;
   z-index: 2;
@@ -121,7 +120,7 @@ nav a {
   text-decoration: none;
   font-family: "Museomoderno";
   margin-right: auto;
-  margin-left: 2.5%;
+  margin-left: 1rem;
   font-size: 2em;
   font-weight: 600;
   color: var(--accent);
@@ -134,19 +133,7 @@ nav #NavLinks {
 }
 
 .ani1 {
-  -webkit-animation: ani1 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
-          animation: ani1 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
-}
-@-webkit-keyframes ani1 {
-  0% {
-    opacity: 0;
-  }
-  50%, 60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+  animation: ani1 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
 }
 @keyframes ani1 {
   0% {
@@ -163,7 +150,6 @@ nav #NavLinks {
 #Hero {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   height: 100vh;
   max-width: 100vw;
@@ -183,7 +169,6 @@ nav #NavLinks {
 #Hero #imgControl {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   width: 90%;
   display: flex;
@@ -309,17 +294,7 @@ nav #NavLinks {
 }
 
 .rotate {
-  -webkit-animation: rot 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
-          animation: rot 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
-}
-
-@-webkit-keyframes rot {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  animation: rot 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
 }
 
 @keyframes rot {
@@ -437,8 +412,7 @@ nav #NavLinks {
 }
 
 #EventReports {
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
   padding: 4rem;
   overflow-y: hidden;
   white-space: nowrap;
@@ -462,15 +436,6 @@ nav #NavLinks {
   font-size: 3em;
 }
 
-@-webkit-keyframes scroll {
-  0% {
-    translate: 0vh;
-  }
-  100% {
-    translate: -86rem;
-  }
-}
-
 @keyframes scroll {
   0% {
     translate: 0vh;
@@ -492,7 +457,6 @@ nav #NavLinks {
   height: 30rem;
   -webkit-user-select: none !important;
      -moz-user-select: none !important;
-      -ms-user-select: none !important;
           user-select: none !important;
   border-radius: var(--radius);
   transition: 400ms ease;
@@ -611,7 +575,6 @@ nav #NavLinks {
 #CoreCommittee {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   min-height: 100vh;
   padding: 1rem;
@@ -659,4 +622,4 @@ nav #NavLinks {
   height: 19rem;
   -o-object-fit: cover;
      object-fit: cover;
-}
+}/*# sourceMappingURL=style.css.map */

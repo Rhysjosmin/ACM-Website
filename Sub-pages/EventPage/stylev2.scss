@@ -58,24 +58,24 @@ nav{
     }
 
     #MainImage{
-        // background-image: url("/media/Img/Events/Inaugural/IMG_9102-768x512.jpg");
-
- 
-        // background-attachment: fixed;
-        // background-position: center;
-        // background-repeat: no-repeat;
-        // background-size: cover;
+        overflow: hidden;
+       img{
+        position: relative;
+        // translate: 0 -100px;
+        width: 100%;
+        height:auto !important;
+       }
   
     }
     img{
         margin-top: .1rem;
         // margin-bottom: 3rem;
-        align-self: flex-start;
+        // align-self: flex-start;
         width:95%;
      height: 70vh;
  
       object-fit: cover;
-      transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    //   transition: .3s ease; 
     }
 
     #mainContent{
