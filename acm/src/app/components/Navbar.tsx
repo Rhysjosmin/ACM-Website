@@ -8,7 +8,7 @@ import { SVGProps } from "react";
 const museoModerno = MuseoModerno({ subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
-export function MaterialSymbolsDarkModeOutline(props: SVGProps<SVGSVGElement>) {
+function MaterialSymbolsDarkModeOutline(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ export function MaterialSymbolsDarkModeOutline(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function MaterialSymbolsSettingsOutlineRounded(
+function MaterialSymbolsSettingsOutlineRounded(
   props: SVGProps<SVGSVGElement>
 ) {
   return (
@@ -44,7 +44,7 @@ export function MaterialSymbolsSettingsOutlineRounded(
   );
 }
 
-export function MaterialSymbolsLogoutRounded(props: SVGProps<SVGSVGElement>) {
+function MaterialSymbolsLogoutRounded(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ export function MaterialSymbolsLogoutRounded(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function MaterialSymbolsEditOutlineRounded(
+function MaterialSymbolsEditOutlineRounded(
   props: SVGProps<SVGSVGElement>
 ) {
   return (
@@ -80,7 +80,7 @@ export function MaterialSymbolsEditOutlineRounded(
   );
 }
 
-export function MaterialSymbolsMenuRounded(props: SVGProps<SVGSVGElement>) {
+function MaterialSymbolsMenuRounded(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

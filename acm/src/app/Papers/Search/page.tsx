@@ -7,7 +7,7 @@ import { SVGProps } from "react";
 const museoModerno = MuseoModerno({ subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
-export function MaterialSymbolsSearchRounded(props: SVGProps<SVGSVGElement>) {
+function MaterialSymbolsSearchRounded(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
