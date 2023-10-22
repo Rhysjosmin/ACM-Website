@@ -29,11 +29,11 @@ export default function ArticlePage() {
   return (
     <div className="flex flex-col items-center h-screen">
       <h1
-        className={`${museoModerno.className} font-black text-3xl mt-16 mb-6 `}
+        className={`${museoModerno.className} font-black text-2xl md:text-3xl mt-16 mb-6 `}
       >
         Research Paper Search
       </h1>
-      <div className="w-[45rem] flex h-12 relative">
+      <div className="md:w-[45rem] w-[calc(100vw-4rem)] flex h-12 relative">
         <input
           className="bg-[#0B0B0B] flex-grow indent-3 focus:outline-none focus:shadow-2xl transition"
           type="text"
@@ -48,9 +48,9 @@ export default function ArticlePage() {
 
       </div>
 
-      <div className="w-[45rem] mt-3">
+      <div className="md:w-[45rem] w-[calc(100vw-4rem)]  mt-3">
         <ul
-          className={`${spaceGrotesk.className} font-thin text-sm grid grid-cols-2 `}
+          className={`${spaceGrotesk.className} font-thin text-sm grid md:grid-cols-2 `}
         >
           <ul className="flex flex-col gap-0.5">
             <li>

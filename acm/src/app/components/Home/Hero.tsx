@@ -26,7 +26,7 @@ export function IcBaselineChevronRight(props: SVGProps<SVGSVGElement>) {
 export default function Hero() {
   return (
     <div className="p-8 md:p-16 h-full relative text-white">
-      <div className="flex w-full justify-between h-[33rem] md:h-[28rem]">
+      <div className="flex w-full justify-between h-[36rem] md:h-[28rem]">
         <div className="md:w-[650px]">
           <h1 className={`${museoModerno.className} font-black  text-4xl`}>
             Advancing Computing as a Science & Profession
@@ -51,7 +51,7 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div className="absolute left-8 md:left-auto w-64 bottom-8 md:bottom-20 md:right-16 hover:bg-neutral-900 hover:border-zinc-800 border border-transparent p-3 rounded-lg transition">
+      <div className="absolute  md:left-auto w-64 bottom-8 md:bottom-20 right-8 md:right-16 hover:bg-neutral-900 hover:border-zinc-800 border border-transparent p-3 rounded-lg transition">
         <Link href={"/"} className="flex items-center">
           <p className="">
             Register for the cyber security talk by Pratham Shah

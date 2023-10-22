@@ -22,8 +22,8 @@ export default function ArticlePage() {
           <div className="h-full w-32 bg-[#FF002E]"></div>
         </div>
       </div>
-      <div className="p-8 md:p-16 md:px-32">
-        <h1 className={`${museoModerno.className} font-black text-5xl mb-4`}>
+      <div className="p-6 md:p-16 md:px-32">
+        <h1 className={`${museoModerno.className} font-black text-4xl mb-2`}>
           Tour To Jaipur
         </h1>
         <p className={`${spaceGrotesk.className} font-thin`}>

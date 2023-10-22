@@ -169,29 +169,34 @@ function TopMenu({ isMenuOpen }: any) {
   );
 }
 
+
+function NavLinks(){
+  return(<><Link
+    href={"/"}
+className={`h-12 pl-4 flex items-center`}
+  >
+    Home
+  </Link>
+  <Link
+    href={"/Papers/Search"}
+   className={`h-12 pl-4 flex items-center`}
+  >
+    Papers
+  </Link></>)
+}
 export default function NavBar() {
   const [topMenuToggle,setTopMenuToggle]=useState(true)
-
+  const [expandedLinkToggle,setExpandedLinkToggle]=useState(false)
   return (
     <div className=" z-10 w-full relative">
       <div className="w-full h-28 bg-[#111111] grid grid-cols-3 items-center place-content-center px-8 md:px-16 ">
-        <div className="gap-4 hidden md:flex">
-          <Link
-            href={"/"}
-            className={` text-center text-white  font-thin ${museoModerno.className} `}
-          >
-            Home
-          </Link>
-          <Link
-            href={"/Papers/Search"}
-            className={`text-center text-white  font-thin ${museoModerno.className}`}
-          >
-            Papers
-          </Link>
+        <div className="gap-4 hidden md:flex text-center text-white  font-thin ${museoModerno.className}">
+          <NavLinks/>
         </div>
-        <div className="gap-4 flex md:hidden">
+      
+        <button onClick={()=>{setExpandedLinkToggle(!expandedLinkToggle)}} className="gap-4 flex md:hidden  w-12 h-12  rounded-full  items-center justify-center">
           <MaterialSymbolsMenuRounded className="w-10 h-10" />
-        </div>
+        </button>
         <div className="flex flex-col items-center">
           <Link href={"/"}>
             <div
@@ -217,6 +222,9 @@ export default function NavBar() {
       <TopMenu isMenuOpen={topMenuToggle} />
 
       <div className="from-transparent via-[#FF005C] to-transparent  bg-gradient-to-l h-[1px] w-full "></div>
+      <div className={`${expandedLinkToggle?'h-24 opacity-100 pointer-events-auto':'h-0 opacity-0 pointer-events-none'} w-full transition-all bg-[#FF005C]  flex flex-col gap-1 text-2xl font-thin`}>
+          <NavLinks/>
+          </div>
     </div>
   );
 }
