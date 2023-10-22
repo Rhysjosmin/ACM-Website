@@ -16,7 +16,7 @@ export default function ArticlePage() {
           height={1000}
           width={1000}
           alt="Article Image"
-          src={"/IMG_1931 1.png"}
+          src={"/Jaipur.png"}
         />
         <div className="h-[2px] bg-white w-full">
           <div className="h-full w-32 bg-[#FF002E]"></div>
