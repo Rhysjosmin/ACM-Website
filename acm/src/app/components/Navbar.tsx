@@ -170,7 +170,7 @@ function TopMenu({ isMenuOpen }: any) {
 }
 
 export default function NavBar() {
-  const [topMenuToggle,setTopMenuToggle]=useState(false)
+  const [topMenuToggle,setTopMenuToggle]=useState(true)
 
   return (
     <div className=" z-10 w-full relative">
