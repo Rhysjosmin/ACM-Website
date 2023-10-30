@@ -45,6 +45,7 @@ export default function Hero() {
           <Image
             height={500}
             width={500}
+            unoptimized={true}
             className="mr-0 -mt-32 hidden md:block"
             alt="BlobGif"
             src={"/blob.gif"}
