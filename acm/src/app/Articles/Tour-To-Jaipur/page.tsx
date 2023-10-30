@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import { MuseoModerno, Space_Grotesk } from "next/font/google";
 import Link from "next/link";
+import ArticleImage from "@/app/components/Article/ArticleImage";
 
 const museoModerno = MuseoModerno({ subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
@@ -10,18 +11,7 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 export default function ArticlePage() {
   return (
     <div>
-      <div>
-        <Image
-          className="w-screen"
-          height={1000}
-          width={1000}
-          alt="Article Image"
-          src={"/Jaipur.png"}
-        />
-        <div className="h-[2px] bg-white w-full">
-          <div className="h-full w-32 bg-[#FF002E]"></div>
-        </div>
-      </div>
+      <ArticleImage Image={'/Jaipur.png'}/>
       <div className="p-6 md:p-16 md:px-32">
         <h1 className={`${museoModerno.className} font-black text-4xl mb-2`}>
           Tour To Jaipur

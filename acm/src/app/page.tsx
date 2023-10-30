@@ -45,18 +45,23 @@ export default function Home() {
           />
           <Article
             name="Visit To A School In Bali"
-            address="/Articles/"
+            address="/Articles/Visit-To-School-in-Bali-2023"
             image="/Bali.jpg"
           />
           <Article
             name="A Talk On Career Insights"
-            address="/Articles/"
+            address="/Articles/Talk-On-Career-Insights"
             image="/Talk.jpg"
           />
           <Article
             name="The DBCE ACM Student Chapter Inauguration"
-            address="/Articles/"
+            address="/Articles/Acm-Student-chapter-inauguration"
             image="/Innaugration.jpeg"
+          />
+          <Article
+            name="Bee Farm Visit"
+            address="/Articles/Bee-Farm-Visit"
+            image="/BeeFarmVisit.jpg"
           />
         </div>
       </div>

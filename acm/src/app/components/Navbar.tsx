@@ -189,15 +189,15 @@ export default function NavBar() {
   const [topMenuToggle,setTopMenuToggle]=useState(true)
   const [expandedLinkToggle,setExpandedLinkToggle]=useState(false)
   return (
-    <div className=" z-10 w-full relative">
+    <div className="z-10 w-full relative">
       <div className="w-full h-28 bg-[#111111] grid grid-cols-3 items-center place-content-center px-8 md:px-16 ">
         <div className="gap-4 hidden md:flex text-center text-white  font-thin ${museoModerno.className}">
           {/* <NavLinks/> */}
         </div>
       
-        <button onClick={()=>{setExpandedLinkToggle(!expandedLinkToggle)}} className="gap-4 flex md:hidden  w-12 h-12  rounded-full  items-center justify-center">
+        {/* <button onClick={()=>{setExpandedLinkToggle(!expandedLinkToggle)}} className="gap-4 flex md:hidden  w-12 h-12  rounded-full  items-center justify-center">
           <MaterialSymbolsMenuRounded className="w-10 h-10" />
-        </button>
+        </button> */}
         <div className="flex flex-col items-center">
           <Link href={"/"}>
             <div

@@ -25,7 +25,7 @@ function MaterialSymbolsArrowForward(props: SVGProps<SVGSVGElement>) {
 export default function Article(props: any) {
   return (
     <Link href={props.address} className="">
-      <div className="aspect-[5/3.5] w-[calc(100vw-2.5rem)] md:w-auto md:h-[26rem]  rounded-lg md:rounded-2xl relative overflow-hidden md:hover:scale-105 transition group">
+      <div className="aspect-[5/3.5] w-[calc(100vw-2.5rem)] md:w-auto md:h-[26rem]  rounded-lg md:rounded-2xl relative overflow-hidden group">
         <Image
           height={800}
           width={800}
