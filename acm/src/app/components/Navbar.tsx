@@ -182,7 +182,8 @@ className={`h-14 pl-4 flex items-center`}
    className={`h-14 pl-4 flex items-center`}
   >
     Papers
-  </Link></>)
+  </Link>
+  </>)
 }
 export default function NavBar() {
   const [topMenuToggle,setTopMenuToggle]=useState(true)
@@ -191,7 +192,7 @@ export default function NavBar() {
     <div className=" z-10 w-full relative">
       <div className="w-full h-28 bg-[#111111] grid grid-cols-3 items-center place-content-center px-8 md:px-16 ">
         <div className="gap-4 hidden md:flex text-center text-white  font-thin ${museoModerno.className}">
-          <NavLinks/>
+          {/* <NavLinks/> */}
         </div>
       
         <button onClick={()=>{setExpandedLinkToggle(!expandedLinkToggle)}} className="gap-4 flex md:hidden  w-12 h-12  rounded-full  items-center justify-center">
@@ -213,10 +214,10 @@ export default function NavBar() {
         </div>
       
   
-      <div className="rounded-full w-11 h-11  justify-self-end"  onClick={()=>{setTopMenuToggle(!topMenuToggle)}}>
+      {/* <div className="rounded-full w-11 h-11  justify-self-end"  onClick={()=>{setTopMenuToggle(!topMenuToggle)}}>
 
         <Profile />
-      </div>
+      </div> */}
       </div>
 
       <TopMenu isMenuOpen={topMenuToggle} />

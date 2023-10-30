@@ -83,10 +83,11 @@ export default function Home() {
           </p>
 
 <div className="relative h-28">
-    <Link href={"/Papers/Search"} className="z-10 absolute bg-[#0075FF] transition hover:bg-[#5da9ff] p-3 mt-6 w-48 flex items-center justify-between">
+    {/* <Link href={"/Papers/Search"} className="z-10 absolute bg-[#0075FF] transition hover:bg-[#5da9ff] p-3 mt-6 w-48 flex gap-3 items-center justify-between"> */}
+    <Link href={"/"} className="z-10 absolute bg-[#0075FF] transition hover:bg-[#5da9ff] p-3 mt-6 w-48 flex gap-3 items-center justify-between">
            
-              <MaterialSymbolsSearchRounded className="w-6 h-6" />
-              Search For Papers
+              <MaterialSymbolsSearchRounded className="w-8 h-8" />
+              Search For Papers (Coming Soon)
        
     </Link>
           <div className="absolute -top-8  left-20 -z-10 blur-3xl opacity-60">

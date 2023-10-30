@@ -52,14 +52,14 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div className="absolute  md:left-auto w-64 bottom-8 md:bottom-20 right-8 md:right-16 hover:bg-neutral-900 hover:border-zinc-800 border border-transparent p-3 rounded-lg transition">
+      {/* <div className="absolute  md:left-auto w-64 bottom-8 md:bottom-20 right-8 md:right-16 hover:bg-neutral-900 hover:border-zinc-800 border border-transparent p-3 rounded-lg transition">
         <Link href={"/"} className="flex items-center">
           <p className="">
             Register for the cyber security talk by Pratham Shah
           </p>
           <IcBaselineChevronRight className="w-16 h-16" />
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }
