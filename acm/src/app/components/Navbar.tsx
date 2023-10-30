@@ -173,13 +173,13 @@ function TopMenu({ isMenuOpen }: any) {
 function NavLinks(){
   return(<><Link
     href={"/"}
-className={`h-12 pl-4 flex items-center`}
+className={`h-14 pl-4 flex items-center`}
   >
     Home
   </Link>
   <Link
     href={"/Papers/Search"}
-   className={`h-12 pl-4 flex items-center`}
+   className={`h-14 pl-4 flex items-center`}
   >
     Papers
   </Link></>)
@@ -222,7 +222,7 @@ export default function NavBar() {
       <TopMenu isMenuOpen={topMenuToggle} />
 
       <div className="from-transparent via-[#FF005C] to-transparent  bg-gradient-to-l h-[1px] w-full "></div>
-      <div className={`${expandedLinkToggle?'h-24 opacity-100 pointer-events-auto':'h-0 opacity-0 pointer-events-none'} w-full transition-all bg-[#FF005C]  flex flex-col gap-1 text-2xl font-thin`}>
+      <div className={`${expandedLinkToggle?'h-28 opacity-100 pointer-events-auto':'h-0 opacity-0 pointer-events-none'} w-full transition-all bg-[#060606]  flex flex-col gap-1 text-2xl font-thin`}>
           <NavLinks/>
           </div>
     </div>
