@@ -39,6 +39,11 @@ export default function Home() {
         </h1>
         <div className="grid md:grid-cols-2 place-items-center gap-3">
           <Article
+            name="Talk : Cyber Security: Protecting Your Digital World"
+            address="/Articles/Talk-On-Cyber-Security-Pratham-Shah"
+            image="/Cyber Security-Pratham-shah.jpg"
+          />
+          <Article
             name="Tour To Jaipur"
             address="/Articles/Tour-To-Jaipur"
             image="/Hindware.jpeg"
