@@ -73,7 +73,7 @@ export default function Home() {
           <Article
             name="A Visit to BITS Pilani K K Birla Goa"
             address="/Articles/BITS-Pilani-visit-2023"
-            image="/BITS Pilani K K Birla.jpg"
+            image="/BITS-Pilan-birla.jpg"
           />
           <Article
             name="Mr Pratham Shah gives a talk on Cyber Security"
