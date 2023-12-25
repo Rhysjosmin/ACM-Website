@@ -35,7 +35,7 @@ export default function Home() {
               Advancing Computing as a Science & Profession
             </h1>
             <p className={`${spaceGrotesk.className} font-thin mt-2`}>
-              Computing powers our vision for a better tomorrow. We're
+              Computing powers our vision for a better tomorrow. We&apos;re
               architects of positive change, using our skills to solve future
               challenges. Join us in shaping a harmonious world through
               computing, towards a brighter future for all
