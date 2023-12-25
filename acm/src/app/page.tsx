@@ -1,10 +1,7 @@
-
-
-
 import Link from "next/link";
 import Article from "./components/Article";
-import Hero from "./components/Home/Hero";
-
+import { IcBaselineChevronRight } from "./components/Home/Hero";
+import Image from "next/image";
 import { MuseoModerno, Space_Grotesk } from "next/font/google";
 import { SVGProps } from "react";
 
@@ -29,15 +26,60 @@ function MaterialSymbolsSearchRounded(props: SVGProps<SVGSVGElement>) {
 }
 
 export default function Home() {
-
   return (
     <div>
-      <Hero />
-      <div className="min-h-screen bg-white text-black py-8 md:p-16">
-        <h1 className={`${museoModerno.className} text-3xl font-black ml-4`}>
+      <div className="p-8 md:p-16 h-full relative text-white">
+        <div className="flex w-full justify-between h-[36rem] md:h-[28rem]">
+          <div className="md:w-[650px]">
+            <h1 className={`${museoModerno.className} font-black  text-4xl`}>
+              Advancing Computing as a Science & Profession
+            </h1>
+            <p className={`${spaceGrotesk.className} font-thin mt-2`}>
+              Computing powers our vision for a better tomorrow. We're
+              architects of positive change, using our skills to solve future
+              challenges. Join us in shaping a harmonious world through
+              computing, towards a brighter future for all
+            </p>
+          </div>
+          <div>
+            <Image
+              height={500}
+              width={500}
+              className="mr-0 -mt-32 hidden md:block"
+              alt="BlobGif"
+              src={"/blob.gif"}
+            />
+          </div>
+        </div>
+        <div className="absolute  md:left-auto w-64 bottom-8 md:bottom-20 right-8 md:right-16 hover:bg-neutral-900 hover:border-zinc-800 border border-transparent p-3 rounded-lg transition">
+          <Link href={"/"} className="flex items-center  justify-between">
+            <p className="">Register For The Tour</p>
+            <IcBaselineChevronRight className="w-8 h-auto aspect-square" />
+          </Link>
+        </div>
+      </div>
+      <div className=" bg-zinc-950 text-white py-8 p-4 md:p-16">
+        <h1
+          className={`${museoModerno.className} text-4xl font-black ml-1 mb-4`}
+        >
           Articles
         </h1>
-        <div className="grid md:grid-cols-2 place-items-center gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-1 ">
+          <Article
+            name="Organized Competitions at A School in Bali"
+            address="/Articles/Competition-Bali"
+            image="/Bali23.JPG"
+          />
+          <Article
+            name="A Visit to BITS Pilani K K Birla Goa"
+            address="/Articles/BITS-Pilani-visit-2023"
+            image="/BITS Pilani K K Birla.jpg"
+          />
+          <Article
+            name="Mr Pratham Shah gives a talk on Cyber Security"
+            address="/Articles/Pratham-Shah-Cyber-Security"
+            image="/CyberSecurity.jpg"
+          />
           <Article
             name="Tour To Jaipur"
             address="/Articles/Tour-To-Jaipur"
@@ -62,42 +104,34 @@ export default function Home() {
       </div>
       <div className="p-8 md:p-16 text-white">
         <div>
-          <h1 className={`${museoModerno.className} text-3xl font-black`}>
+          <h1 className={`${museoModerno.className} text-4xl font-black`}>
             Research Papers
           </h1>
-          <p className={`${spaceGrotesk.className} mt-2 font-thin  md:w-[50rem]`}>
-            In the realm of DBCE ACM, intellectual excellence finds its truest
-            expression through a curated collection of exceptional research
-            papers. Authored by esteemed scholars, erudite professors, and
-            accomplished graduates, these manuscripts stand as pillars of our
-            commitment to advancing knowledge. Within this repository, you will
-            discover a diverse array of meticulously crafted papers spanning
-            various disciplines. Each document represents a profound exploration
-            of concepts, theories, and innovative methodologies, illuminating
-            the intersections of human understanding. As you delve into our
-            collection, you embark on a transformative journey through the
-            cutting-edge landscape of contemporary research, where curiosity
-            meets innovation, shaping the future of academia. Explore the depths
-            of these scholarly insights, and join us in the pursuit of
-            intellectual curiosity and academic excellence.
+          <p
+            className={`${spaceGrotesk.className} mt-2 font-thin  md:w-[50rem]`}
+          >
+            in The DBCE ACM Student Chapter, professors and creative minds
+            author exceptional research papers. Delve into diverse, insightful
+            manuscripts showcasing cutting-edge research. Join us in pursuing
+            academic excellence!
           </p>
 
-<div className="relative h-28">
-    <Link href={"/Papers/Search"} className="z-10 absolute bg-[#0075FF] transition hover:bg-[#5da9ff] p-3 mt-6 w-48 flex items-center justify-between">
-           
+          <div className="relative h-28">
+            <Link
+              href={"/Papers/Search"}
+              className="z-10 absolute bg-[#0075FF] transition hover:bg-[#5da9ff] p-3 mt-6 w-48 flex items-center justify-between"
+            >
               <MaterialSymbolsSearchRounded className="w-6 h-6" />
               Search For Papers
-       
-    </Link>
-          <div className="absolute -top-8  left-20 -z-10 blur-3xl opacity-60">
-            <svg
-              width="200"
-              height="220"
-              viewBox="265 275 200 200"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-       
+            </Link>
+            <div className="absolute -top-8  left-20 -z-10 blur-3xl opacity-60">
+              <svg
+                width="200"
+                height="220"
+                viewBox="265 275 200 200"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -105,11 +139,9 @@ export default function Home() {
                   fill="#0075FF"
                   fillOpacity="0.51"
                 />
-            
-            </svg>
+              </svg>
+            </div>
           </div>
-</div>
-        
         </div>
       </div>
     </div>

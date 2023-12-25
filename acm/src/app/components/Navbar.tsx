@@ -25,9 +25,7 @@ function MaterialSymbolsDarkModeOutline(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-function MaterialSymbolsSettingsOutlineRounded(
-  props: SVGProps<SVGSVGElement>
-) {
+function MaterialSymbolsSettingsOutlineRounded(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -61,9 +59,7 @@ function MaterialSymbolsLogoutRounded(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-function MaterialSymbolsEditOutlineRounded(
-  props: SVGProps<SVGSVGElement>
-) {
+function MaterialSymbolsEditOutlineRounded(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -97,14 +93,9 @@ function MaterialSymbolsMenuRounded(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-
-
-
-
 function Profile() {
-
   return (
-    <div 
+    <div
       className={`w-11 h-11 border border-white/40 hover:border-[#0075FF] transition rounded-full p-0.5`}
     >
       <Image
@@ -119,10 +110,13 @@ function Profile() {
 }
 
 function TopMenu({ isMenuOpen }: any) {
-
   return (
     <div
-      className={`absolute w-48 bg-[#0a0a0a] rounded-2xl right-16 top-[5.5rem] flex flex-col overflow-hidden transition ${isMenuOpen?'opacity-0 pointer-events-none':'opacity-100 pointer-events-auto'}`}
+      className={`absolute w-48 bg-[#0a0a0a] rounded-2xl right-16 top-[5.5rem] flex flex-col overflow-hidden transition ${
+        isMenuOpen
+          ? "opacity-0 pointer-events-none"
+          : "opacity-100 pointer-events-auto"
+      }`}
     >
       <div className="flex justify-center pt-4">
         <div className="flex flex-col items-center pt4">
@@ -153,7 +147,10 @@ function TopMenu({ isMenuOpen }: any) {
           <MaterialSymbolsDarkModeOutline />
           <p>Theme</p>
         </button>
-        <Link href={'/Settings'} className="flex items-center pl-4 gap-2 p-1 h-10 hover:bg-white/5">
+        <Link
+          href={"/Settings"}
+          className="flex items-center pl-4 gap-2 p-1 h-10 hover:bg-white/5"
+        >
           <MaterialSymbolsSettingsOutlineRounded />
           <p>Settings</p>
         </Link>
@@ -169,33 +166,47 @@ function TopMenu({ isMenuOpen }: any) {
   );
 }
 
-
-function NavLinks(){
-  return(<><Link
-    href={"/"}
-className={`h-14 pl-4 flex items-center`}
-  >
-    Home
-  </Link>
-  <Link
-    href={"/Papers/Search"}
-   className={`h-14 pl-4 flex items-center`}
-  >
-    Papers
-  </Link></>)
+function NavLinks() {
+  return (
+    <>
+      <Link
+        href={"/"}
+        className={`h-10 md:h-14 p-4 md:p-0 flex transition hover:bg-zinc-900 md:hover:text-blue-500 md:hover:bg-transparent items-center`}
+      >
+        Home
+      </Link>
+      <Link
+        href={"/Papers/Search"}
+        className={`h-10 md:h-14 p-4 md:p-0 flex transition hover:bg-zinc-900 md:hover:text-blue-500 md:hover:bg-transparent items-center`}
+      >
+        Papers
+      </Link>
+      <Link
+        href={"/Papers/Search"}
+        className={`h-10 md:h-14 p-4 md:p-0 flex transition hover:bg-zinc-900 md:hover:text-blue-500 md:hover:bg-transparent items-center`}
+      >
+        Internship Details
+      </Link>
+    </>
+  );
 }
 export default function NavBar() {
-  const [topMenuToggle,setTopMenuToggle]=useState(true)
-  const [expandedLinkToggle,setExpandedLinkToggle]=useState(false)
+  const [topMenuToggle, setTopMenuToggle] = useState(true);
+  const [expandedLinkToggle, setExpandedLinkToggle] = useState(false);
   return (
     <div className=" z-10 w-full relative">
       <div className="w-full h-28 bg-[#111111] grid grid-cols-3 items-center place-content-center px-8 md:px-16 ">
         <div className="gap-4 hidden md:flex text-center text-white  font-thin ${museoModerno.className}">
-          <NavLinks/>
+          <NavLinks />
         </div>
-      
-        <button onClick={()=>{setExpandedLinkToggle(!expandedLinkToggle)}} className="gap-4 flex md:hidden  w-12 h-12  rounded-full  items-center justify-center">
-          <MaterialSymbolsMenuRounded className="w-10 h-10" />
+
+        <button
+          onClick={() => {
+            setExpandedLinkToggle(!expandedLinkToggle);
+          }}
+          className="gap-4 flex md:hidden  w-12 h-12  rounded-full  items-center justify-center"
+        >
+          <MaterialSymbolsMenuRounded className="w-8 h-8" />
         </button>
         <div className="flex flex-col items-center">
           <Link href={"/"}>
@@ -211,20 +222,29 @@ export default function NavBar() {
             Student Chapter
           </div>
         </div>
-      
-  
-      <div className="rounded-full w-11 h-11  justify-self-end"  onClick={()=>{setTopMenuToggle(!topMenuToggle)}}>
 
-        <Profile />
-      </div>
+        <div
+          className="rounded-full w-11 h-11  justify-self-end "
+          onClick={() => {
+            setTopMenuToggle(!topMenuToggle);
+          }}
+        >
+          <Profile />
+        </div>
       </div>
 
       <TopMenu isMenuOpen={topMenuToggle} />
 
       <div className="from-transparent via-[#FF005C] to-transparent  bg-gradient-to-l h-[1px] w-full "></div>
-      <div className={`${expandedLinkToggle?'h-28 opacity-100 pointer-events-auto':'h-0 opacity-0 pointer-events-none'} w-full transition-all bg-[#060606]  flex flex-col gap-1 text-2xl font-thin`}>
-          <NavLinks/>
-          </div>
+      <div
+        className={`${
+          expandedLinkToggle
+            ? "h-auto opacity-100 pointer-events-auto"
+            : "h-0 opacity-0 pointer-events-none"
+        } md:hidden w-full transition-all bg-[#111111]  border-b border-white/10 flex flex-col   font-thin`}
+      >
+        <NavLinks />
+      </div>
     </div>
   );
 }
