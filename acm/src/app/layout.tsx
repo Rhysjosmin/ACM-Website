@@ -4,7 +4,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home - DBCE ACM",
+  title: "Home · DBCE ACM",
   description: "The DBCE ACM Student Chapter",
 };
 
