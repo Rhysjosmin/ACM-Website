@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Article from "./components/Article";
-import { IcBaselineChevronRight } from "./components/Home/Hero";
+import Article from "@/components/Article";
 import Image from "next/image";
 import { MuseoModerno, Space_Grotesk } from "next/font/google";
 import { SVGProps } from "react";
+import { IcBaselineChevronRight } from "../components/icons";
 
 const museoModerno = MuseoModerno({ subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
@@ -28,7 +28,7 @@ function MaterialSymbolsSearchRounded(props: SVGProps<SVGSVGElement>) {
 export default function Home() {
   return (
     <div>
-      <div className="p-8 md:p-16 h-full relative text-white">
+      <div className="relative h-full p-8 text-white md:p-16">
         <div className="flex w-full justify-between h-[36rem] md:h-[28rem]">
           <div className="md:w-[650px]">
             <h1 className={`${museoModerno.className} font-black  text-4xl`}>
@@ -45,70 +45,77 @@ export default function Home() {
             <Image
               height={500}
               width={500}
-              className="mr-0 -mt-32 hidden md:block"
+              className="hidden mr-0 -mt-32 md:block"
               alt="BlobGif"
               src={"/blob.gif"}
             />
           </div>
         </div>
-        <div className="absolute  md:left-auto w-64 bottom-8 md:bottom-20 right-8 md:right-16 hover:bg-neutral-900 hover:border-zinc-800 border border-transparent p-3 rounded-lg transition">
-          <Link href={"/"} className="flex items-center  justify-between">
+        <div className="absolute w-64 p-3 transition border border-transparent rounded-lg md:left-auto bottom-8 md:bottom-20 right-8 md:right-16 hover:bg-neutral-900 hover:border-zinc-800">
+          <Link href={"/"} className="flex items-center justify-between">
             <p className="">Register For The Tour</p>
             <IcBaselineChevronRight className="w-8 h-auto aspect-square" />
           </Link>
         </div>
       </div>
-      <div className=" bg-zinc-950 text-white py-8 p-4 md:p-16">
+      <div className="p-4 py-8 text-white bg-zinc-950 md:p-16">
         <h1
           className={`${museoModerno.className} text-4xl font-black ml-1 mb-4`}
         >
           Articles
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-1 ">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 md:gap-1 ">
           <Article
+            details="01 Jan 2024"
             name="Organized Competitions at A School in Bali"
             address="/Articles/Competition-Bali"
             image="/Bali23.JPG"
           />
           <Article
+            details="01 Jan 2024"
             name="A Visit to BITS Pilani K K Birla Goa"
             address="/Articles/BITS-Pilani-visit-2023"
             image="/BITS-Pilan-birla.jpg"
           />
           <Article
+            details="01 Jan 2024"
             name="Mr Pratham Shah gives a talk on Cyber Security"
             address="/Articles/Pratham-Shah-Cyber-Security"
             image="/CyberSecurity.jpg"
           />
           <Article
+            details="01 Jan 2024"
             name="Tour To Jaipur"
             address="/Articles/Tour-To-Jaipur"
             image="/Hindware.jpeg"
           />
           <Article
+            details="01 Jan 2024"
             name="Visit To A School In Bali"
             address="/Articles/"
             image="/Bali.jpg"
           />
           <Article
+            details="01 Jan 2024"
             name="A Talk On Career Insights"
             address="/Articles/"
             image="/Talk.jpg"
           />
           <Article
+            details="01 Jan 2024"
             name="The DBCE ACM Student Chapter Inauguration"
             address="/Articles/"
             image="/Innaugration.jpeg"
           />
         </div>
       </div>
-      <div className="p-8 md:p-16 text-white">
+      <div className="p-8 text-white md:p-16">
         <div>
           <h1 className={`${museoModerno.className} text-4xl font-black`}>
             Research Papers
           </h1>
           <p
-            className={`${spaceGrotesk.className} mt-2 font-thin  md:w-[50rem]`}
+            className={`${spaceGrotesk.className}  mt-2 font-thin  md:w-[50rem]`}
           >
             in The DBCE ACM Student Chapter, professors and creative minds
             author exceptional research papers. Delve into diverse, insightful
@@ -124,7 +131,7 @@ export default function Home() {
               <MaterialSymbolsSearchRounded className="w-6 h-6" />
               Search For Papers
             </Link>
-            <div className="absolute -top-8  left-20 -z-10 blur-3xl opacity-60">
+            <div className="absolute -top-8 left-20 -z-10 blur-3xl opacity-60">
               <svg
                 width="200"
                 height="220"

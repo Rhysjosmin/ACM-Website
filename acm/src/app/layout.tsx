@@ -1,5 +1,6 @@
-import Footer from "./components/Footer";
-import NavBar from "./components/Navbar";
+import ClientProvider from "@/components/ClientProvider";
+import Footer from "../components/Footer";
+import NavBar from "../components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 
@@ -14,13 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
-        <NavBar />
-
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <ClientProvider>
+      <html lang="en">
+        <body>
+          <NavBar />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </ClientProvider>
   );
 }

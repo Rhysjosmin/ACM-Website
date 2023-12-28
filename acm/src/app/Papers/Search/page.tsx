@@ -2,15 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { MuseoModerno, Space_Grotesk } from "next/font/google";
-import SearchBar from "@/app/components/SearchBar";
+import SearchBar from "@/components/SearchBar";
 
 const museoModerno = MuseoModerno({ subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
-
-
 export default function SearchPage() {
-
   return (
     <div className="flex flex-col items-center h-screen">
       <h1
@@ -19,7 +16,7 @@ export default function SearchPage() {
         Research Paper Search
       </h1>
 
-<SearchBar query='Search Papers'/>
+      <SearchBar query="Search Papers" />
       <div className="md:w-[45rem] w-[calc(100vw-4rem)]  mt-3">
         <ul
           className={`${spaceGrotesk.className} font-thin text-sm grid md:grid-cols-2 `}
