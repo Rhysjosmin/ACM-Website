@@ -42,13 +42,13 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <Image
+            {/* <Image
               height={500}
               width={500}
               className="hidden mr-0 -mt-32 md:block"
               alt="BlobGif"
               src={"/blob.gif"}
-            />
+            /> */}
           </div>
         </div>
         <div className="absolute w-64 p-3 transition border border-transparent rounded-lg md:left-auto bottom-8 md:bottom-20 right-8 md:right-16 hover:bg-neutral-900 hover:border-zinc-800">
