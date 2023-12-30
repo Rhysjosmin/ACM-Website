@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import Image from "next/image";
 
 import { MuseoModerno, Space_Grotesk } from "next/font/google";
 import Link from "next/link";
+import { ImageGallery } from "@/components/ImageGallery";
 
 const museoModerno = MuseoModerno({ subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
@@ -11,16 +11,9 @@ export default function ArticlePage() {
   return (
     <div>
       <div>
-        <Image
-          className="w-screen"
-          height={1000}
-          width={1000}
-          alt="Article Image"
-          src={"/Jaipur.png"}
+        <ImageGallery
+          Images={["/Jaipur.png", "/Hindware.jpeg", "/Innaugration.jpeg"]}
         />
-        <div className="h-[2px] bg-white w-full">
-          <div className="h-full w-32 bg-[#FF002E]"></div>
-        </div>
       </div>
       {/* <div className="p-6 md:p-16 md:px-32 md:w-[50rem] "> */}
       <div className="grid  md:grid-cols-6 p-6 gap-10 md:p-16 md:px-32 ">
