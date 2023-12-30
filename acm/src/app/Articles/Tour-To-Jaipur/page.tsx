@@ -12,7 +12,16 @@ export default function ArticlePage() {
     <div>
       <div>
         <ImageGallery
-          Images={["/Jaipur.png", "/Hindware.jpeg", "/Innaugration.jpeg"]}
+          Images={[
+            "/Jaipur.png",
+            "/Hindware.jpeg",
+            "/Innaugration.jpeg",
+            "/Jaipur-23/20230413_173259-min.jpg",
+            "/Jaipur-23/20230415_153437-min.jpg",
+            "/Jaipur-23/IMG_1676-min.jpg",
+            "/Jaipur-23/IMG_1937-min.jpg",
+            "/Jaipur-23/IMG_6013-min.jpg",
+          ]}
         />
       </div>
       {/* <div className="p-6 md:p-16 md:px-32 md:w-[50rem] "> */}
