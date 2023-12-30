@@ -326,6 +326,7 @@ export default function Page() {
   pages.shift();
 
   const [currentPage, setCurrentPage] = useState(1);
+
   return (
     <section className="flex flex-col items-center min-h-screen p-8">
       <DataTable
@@ -372,8 +373,8 @@ function PageSelector(props: any) {
           return (
             <button
               key={page}
-              className={`h-full px-3 bg-zinc-950 hover:bg-zinc-800 ${
-                props.chosenPage == page ? "bg-blue-700" : ""
+              className={`h-full px-3  hover:bg-zinc-800 ${
+                props.chosenPage == page ? "bg-blue-700" : "bg-zinc-950"
               }`}
               onClick={() => handlePageChange(page)}
             >
@@ -437,7 +438,7 @@ function DataTable(props: any) {
                   return (
                     <span
                       key={item.index + "Tag-" + tag}
-                      className="p-1 text-xs bg-zinc-700/5 group-hover:bg-rose-600/10 group-hover:hover:bg-blue-600/20 text-white/80"
+                      className="p-1 text-xs w-min rounded bg-zinc-700/5 group-hover:bg-rose-600/10 group-hover:hover:bg-blue-600/20 text-white/80"
                     >
                       #{tag}
                     </span>

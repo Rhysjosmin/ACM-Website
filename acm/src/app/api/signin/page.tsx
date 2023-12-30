@@ -70,7 +70,6 @@ export default function Page() {
             >
               Sign In
             </Button>
-            22{" "}
           </ThemeProvider>
         </div>
       </div>

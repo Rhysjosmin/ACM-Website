@@ -1,5 +1,4 @@
 import { NextAuthOptions } from "next-auth";
-import GoogleProvider from "next-auth/providers/google";
 import CredentialsProvider from "next-auth/providers/credentials";
 
 export const authOptions: NextAuthOptions = {
@@ -20,8 +19,8 @@ export const authOptions: NextAuthOptions = {
       async authorize(credentials) {
         const user = {
           id: "10",
-          name: "NIOUSER",
-          password: "31415NIO",
+          name: "Rhys",
+          password: "1234",
         };
         if (
           credentials?.username === user.name &&
@@ -33,13 +32,8 @@ export const authOptions: NextAuthOptions = {
         }
       },
     }),
-    // GoogleProvider({
-    //   clientId: process.env.GOOGLE_CLIENT_ID!,
-    //   clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-    // }),
   ],
   pages: {
-    signIn: "../../signin",
-    signOut: "../../signout",
+    signIn: "/api/signin",
   },
 };
