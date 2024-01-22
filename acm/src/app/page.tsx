@@ -99,7 +99,7 @@ export default function Home() {
             details="01 Jan 2024"
             name="A Visit To A Bee Farm"
             address="/Articles/Bee-Farm-Visit"
-            image="/BeeVisit/IMG-20221126-WA0021 (1).jpg"
+            image="/BeeVisit/IMG-20221126-WA0021.jpg"
           />
           <Article
             details="01 Jan 2024"
