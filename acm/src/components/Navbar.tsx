@@ -29,7 +29,9 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 function Profile() {
   return (
     <div
-      className={`w-11 h-11 border border-white/40 hover:border-[#0075FF] transition rounded-full p-0.5`}
+      className={
+        "w-11 h-11 border border-white/40 hover:border-[#0075FF] transition rounded-full p-0.5"
+      }
     >
       <Image
         width={100}
@@ -53,7 +55,7 @@ function TopMenu({ isMenuOpen }: any) {
     >
       <div className="flex justify-center pt-4">
         <div className="flex flex-col items-center pt4">
-          <div className={`w-11 h-11 rounded-full justify-self-end relative`}>
+          <div className={"w-11 h-11 rounded-full justify-self-end relative"}>
             <Image
               width={100}
               height={100}
@@ -107,7 +109,7 @@ function NavLinks() {
       <Link
         href={"/"}
         className={`${
-          path == "/" ? "text-blue-600" : ""
+          path === "/" ? "text-blue-600" : ""
         } h-10 md:h-14 p-4 md:p-0 flex transition hover:bg-zinc-900 md:hover:text-blue-500 md:hover:bg-transparent items-center`}
       >
         Home
@@ -141,14 +143,13 @@ export default function NavBar() {
           <NavLinks />
         </div>
 
-        <button
+        <Menu
+          expandedLinkToggle={expandedLinkToggle}
           onClick={() => {
             setExpandedLinkToggle(!expandedLinkToggle);
           }}
-          className="flex items-center justify-center w-12 h-12 gap-4 rounded-full md:hidden"
-        >
-          <MaterialSymbolsMenuRounded className="w-8 h-8" />
-        </button>
+        />
+
         <div className="flex flex-col items-center">
           <Link href={"/"}>
             <div
@@ -180,6 +181,7 @@ export default function NavBar() {
               </DropdownMenuItem>
               <DropdownMenuItem className="z-50  focus:bg-zinc-900/60 cursor-pointer">
                 <button
+                  type="button"
                   onClick={() => signOut()}
                   className="flex items-center gap-2"
                 >
@@ -219,6 +221,41 @@ export default function NavBar() {
       >
         <NavLinks />
       </div>
+    </div>
+  );
+}
+
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
+function Menu({
+  onClick,
+  className,
+  expandedLinkToggle,
+}: {
+  onClick: any;
+  className?: string;
+  expandedLinkToggle: boolean;
+}) {
+  return (
+    <div
+      onClick={onClick}
+      onKeyDown={onClick}
+      className={`${className} flex flex-col  items-center justify-between  w-8 h-6 aspect-square  md:hidden  cursor-pointer`}
+    >
+      <div
+        className={`${
+          expandedLinkToggle ? "rotate-45 translate-y-3" : ""
+        } w-8 h-[1px] bg-white transition-transform duration-300`}
+      />
+      <div
+        className={`${
+          expandedLinkToggle ? "scale-x-0" : ""
+        } w-8 h-[1px] bg-white transition-transform duration-300`}
+      />
+      <div
+        className={`${
+          expandedLinkToggle ? "-rotate-45 -translate-y-3" : ""
+        } w-8 h-[1px] bg-white transition-transform duration-300`}
+      />
     </div>
   );
 }

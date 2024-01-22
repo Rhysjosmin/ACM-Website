@@ -68,7 +68,7 @@ export default function Home() {
           <Article
             details="01 Jan 2024"
             name="Organized Competitions at A School in Bali"
-            address="/Articles/Competition-Bali"
+            address="/Articles/Bali-Visit-23"
             image="/Bali23.JPG"
           />
           <Article
@@ -92,19 +92,19 @@ export default function Home() {
           <Article
             details="01 Jan 2024"
             name="Visit To A School In Bali"
-            address="/Articles/"
+            address="/Articles/Bali-Visit-22"
             image="/Bali.jpg"
           />
           <Article
             details="01 Jan 2024"
             name="A Visit To A Bee Farm"
-            address="/Articles/"
-            image="/Talk.jpg"
+            address="/Articles/Bee-Farm-Visit"
+            image="/BeeVisit/IMG-20221126-WA0021 (1).jpg"
           />
           <Article
             details="01 Jan 2024"
             name="A Talk On Career Insights"
-            address="/Articles/"
+            address="/Articles/Career-Insights-Talk"
             image="/Talk.jpg"
           />
           <Article

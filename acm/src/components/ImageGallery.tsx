@@ -22,7 +22,7 @@ export function ImageGallery({
   return (
     <>
       <Image
-        className="w-screen h-auto aspect-video object-cover"
+        className="w-screen h-auto aspect-video object-cover "
         height={1000}
         width={1000}
         alt="Article Image"
