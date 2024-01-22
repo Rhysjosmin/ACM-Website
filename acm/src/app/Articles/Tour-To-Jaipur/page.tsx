@@ -12,10 +12,10 @@ export default function ArticlePage() {
     <div>
       <div>
         <ImageGallery
+          Duration={5000}
           Images={[
             "/Jaipur.png",
             "/Hindware.jpeg",
-            "/Innaugration.jpeg",
             "/Jaipur-23/20230413_173259-min.jpg",
             "/Jaipur-23/20230415_153437-min.jpg",
             "/Jaipur-23/IMG_1676-min.jpg",
@@ -34,7 +34,7 @@ export default function ArticlePage() {
             The DBCE ACM Chapter of{" "}
             <Link
               href={"https://dbcegoa.ac.in/"}
-              className={`underline underline-offset-2 hover:text-sky-400`}
+              className={"underline underline-offset-2 hover:text-sky-400"}
             >
               Don Bosco College of Engineering
             </Link>{" "}

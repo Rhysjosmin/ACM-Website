@@ -2,19 +2,23 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-export function ImageGallery({ Images }: { Images: string[] }) {
+export function ImageGallery({
+  Images,
+  Duration,
+}: {
+  Images: string[];
+  Duration: number;
+}) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [loaderWidth, setLoaderWidth] = useState("0%");
   useEffect(() => {
     setTimeout(() => {
       setLoaderWidth(
-        String(((currentImageIndex + 1) / Images.length) * 100) + "%"
+        `${String(((currentImageIndex + 1) / Images.length) * 100)}%`
       );
       setCurrentImageIndex((currentImageIndex + 1) % Images.length);
-    }, 2000);
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentImageIndex]);
+    }, Duration);
+  }, [Duration, Images.length, currentImageIndex]);
   return (
     <>
       <Image

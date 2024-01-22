@@ -97,6 +97,12 @@ export default function Home() {
           />
           <Article
             details="01 Jan 2024"
+            name="A Visit To A Bee Farm"
+            address="/Articles/"
+            image="/Talk.jpg"
+          />
+          <Article
+            details="01 Jan 2024"
             name="A Talk On Career Insights"
             address="/Articles/"
             image="/Talk.jpg"
@@ -104,8 +110,8 @@ export default function Home() {
           <Article
             details="01 Jan 2024"
             name="The DBCE ACM Student Chapter Inauguration"
-            address="/Articles/"
-            image="/Innaugration.jpeg"
+            address="/Articles/Chapter-Inauguration"
+            image="/Inauguration.jpeg"
           />
         </div>
       </div>
