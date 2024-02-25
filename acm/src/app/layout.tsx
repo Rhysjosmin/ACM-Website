@@ -7,7 +7,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Home · DBCE ACM",
   description: "The DBCE ACM Student Chapter",
+  verification: { google: "vG3IyypihOjBQ-XNlPyhD2UADs1zoSfMnl9sXJ4tqgo" },
 };
+
 
 export default function RootLayout({
   children,
