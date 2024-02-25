@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://dbce-acm.netlify.app/</loc>
+  <lastmod>2024-02-25T13:03:50+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://dbce-acm.netlify.app/api/signin?callbackUrl=https%3A%2F%2Fdbce-acm.netlify.app%2FPapers%2FSearch</loc>
+  <lastmod>2024-02-25T13:03:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dbce-acm.netlify.app/api/signin?callbackUrl=https%3A%2F%2Fdbce-acm.netlify.app%2FInternship-details</loc>
+  <lastmod>2024-02-25T13:03:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dbce-acm.netlify.app/settings</loc>
+  <lastmod>2024-02-25T13:03:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dbce-acm.netlify.app/articles/bali-visit-23</loc>
+  <lastmod>2024-02-25T13:03:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dbce-acm.netlify.app/articles/pratham-shah-cyber-security</loc>
+  <lastmod>2024-02-25T13:03:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dbce-acm.netlify.app/articles/tour-to-jaipur</loc>
+  <lastmod>2024-02-25T13:03:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dbce-acm.netlify.app/articles/bali-visit-22</loc>
+  <lastmod>2024-02-25T13:03:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dbce-acm.netlify.app/articles/bee-farm-visit</loc>
+  <lastmod>2024-02-25T13:03:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dbce-acm.netlify.app/articles/career-insights-talk</loc>
+  <lastmod>2024-02-25T13:03:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dbce-acm.netlify.app/articles/chapter-inauguration</loc>
+  <lastmod>2024-02-25T13:03:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
